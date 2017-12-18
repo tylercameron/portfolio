@@ -42,15 +42,15 @@ class Projects extends Component {
         const {selectedProj, filterTag} = this.state
         
         const projectThumbs = projects.projects.map((proj, index) => (
-            <Thumbnail img={proj.acf.feature_image.url} 
-                title={proj.title.rendered}
-                subhd={proj.acf.subheading}
+            <Thumbnail img={proj.feature_image.url} 
+                title={proj.title}
+                subhd={proj.subheading}
                 key={proj.id}
                 id={proj.id}
                 index={index}
                 selectedTag={proj.stack_tag.includes(filterTag) || filterTag === "all" ? true : false}
                 onLinkClick={this.onLinkClick} />
-        ))
+        ));
 
         let project = null
         if (selectedProj !== "") {
@@ -62,13 +62,8 @@ class Projects extends Component {
                 <h1 className="proj-thmbs__title">PROJECTS</h1>
                 <FilterTags selectedTag={filterTag} onTagClick={this.onFilterTags} />
                 <div id="projects" className="proj-thmbs">
-                    <CSSTransitionGroup
-                        transitionName="example"
-                        transitionLeave={true}
-                        transitionEnterTimeout={2000}
-                        transitionLeaveTimeout={2000}> 
+                    
                         {projectThumbs}
-                    </CSSTransitionGroup> 
                 </div>
                 {project}
             </div>

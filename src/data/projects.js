@@ -11,7 +11,7 @@ const projects = [
             "alt": "just thinking book website",
             "title": "justthinkingbook",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/justthinkingbook@2x-e1510305615826.jpg",
+            "url": "justthinkingbook@2x-e1510305615826.jpg",
             "width": 800,
             "height": 500
         },
@@ -21,7 +21,7 @@ const projects = [
         "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.",
         "gallery": [
             {
-                "url": "../Assets/img/projects/justthinkingbook@2x.jpg",
+                "url": "justthinkingbook@2x.jpg",
                 "post_mime_type": "image/png"     
             }
         ],
@@ -39,7 +39,7 @@ const projects = [
             "alt": "Maintemp Website",
             "title": "Maintemp Website",
             "mime_type": "image/png",
-            "url": "../Assets/img/projects/Screen-Shot-2017-11-17-at-10.28.17-AM.png",
+            "url": "Screen-Shot-2017-11-17-at-10.28.17-AM.png",
             "width": 2560,
             "height": 1600,
         },
@@ -49,7 +49,7 @@ const projects = [
         "page_description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
         "gallery": [
             {
-                "url": "../Assets/img/projects/Screen-Shot-2017-11-17-at-10.28.17-AM.png",
+                "url": "Screen-Shot-2017-11-17-at-10.28.17-AM.png",
                 "post_mime_type": "image/png"     
             }
         ], 
@@ -67,7 +67,7 @@ const projects = [
             "alt": "",
             "title": "Pups N Suds",
             "mime_type": "image/jpeg",
-            "url":  "../Assets/img/projects/pupsnsuds@2x-e1510305599735.jpg",
+            "url":  "pupsnsuds@2x-e1510305599735.jpg",
             "width": 800,
             "height": 500
         },
@@ -77,23 +77,23 @@ const projects = [
         "page_description": "Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.\r\n",
         "gallery": [
             {                                                
-                "url": "../Assets/img/projects/pupsnsuds@2x.jpg",                                
+                "url": "pupsnsuds@2x.jpg",                                
                 "post_mime_type": "image/jpeg"                
             },
             {                                                
-                "url": "../Assets/img/projects/pups-about@2x.jpg",                                
+                "url": "pups-about@2x.jpg",                                
                 "post_mime_type": "image/jpeg"                
             },
             {                                                
-                "url": "../Assets/img/projects/pups-rates@2x.jpg",                                
+                "url": "pups-rates@2x.jpg",                                
                 "post_mime_type": "image/jpeg"                
             },
             {                                                
-                "url": "../Assets/img/projects/pups-feats@2x.jpg",                                
+                "url": "pups-feats@2x.jpg",                                
                 "post_mime_type": "image/jpeg"                
             },
             {                                                
-                "url": "../Assets/img/projects/pups-form@2x.jpg",                                
+                "url": "pups-form@2x.jpg",                                
                 "post_mime_type": "image/jpeg"                
             }
         ],
@@ -109,7 +109,7 @@ const projects = [
         "stack_tag": [2, 5],
         "gallery": [
             {
-                "url": "../Assets/img/projects/kooshoo@2x.jpg",
+                "url": "kooshoo@2x.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -117,7 +117,7 @@ const projects = [
             "alt": "",
             "title": "kooshoo",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/kooshoo@2x-e1510305565697.jpg",
+            "url": "kooshoo@2x-e1510305565697.jpg",
             "width": 800,
             "height": 500
         },
@@ -137,7 +137,7 @@ const projects = [
         "stack_tag": [3],
         "gallery": [
             {
-                "url": "../Assets/img/projects/compasscreative@2x.jpg",
+                "url": "compasscreative@2x.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -145,7 +145,7 @@ const projects = [
             "alt": "",
             "title": "compass creative",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/compasscreative@2x-e1510305574294.jpg",
+            "url": "compasscreative@2x-e1510305574294.jpg",
             "width": 800,
             "height": 500
         },
@@ -165,7 +165,7 @@ const projects = [
         "stack_tag": [3, 2],
         "gallery": [
             {
-                "url": "../Assets/img/projects/missionthriftstore@2x.jpg",
+                "url": "missionthriftstore@2x.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -173,7 +173,7 @@ const projects = [
             "alt": "",
             "title": "missionthriftstore",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/missionthriftstore@2x-e1510305555425.jpg",
+            "url": "missionthriftstore@2x-e1510305555425.jpg",
             "width": 800,
             "height": 500
         },
@@ -193,7 +193,7 @@ const projects = [
         "stack_tag": [3, 2],
         "gallery": [
             {
-                "url": "../Assets/img/projects/shademaster@2x.jpg",
+                "url": "shademaster@2x.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -201,7 +201,7 @@ const projects = [
             "alt": "",
             "title": "shademaster",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/shademaster@2x-e1510305590894.jpg",
+            "url": "shademaster@2x-e1510305590894.jpg",
             "width": 800,
             "height": 500
         },
@@ -221,7 +221,7 @@ const projects = [
         "stack_tag": [3, 2],
         "gallery": [
             {
-                "url": "../Assets/img/projects/niagarapallet@2x.jpg",
+                "url": "niagarapallet@2x.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -229,7 +229,7 @@ const projects = [
             "alt": "",
             "title": "niagarapallet",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/niagarapallet@2x-e1510305607284.jpg",
+            "url": "niagarapallet@2x-e1510305607284.jpg",
             "width": 800,
             "height": 500
         },
@@ -249,7 +249,7 @@ const projects = [
         "stack_tag": [3, 2],
         "gallery": [
             {
-                "url": "../Assets/img/projects/tebulo@2x.jpg",
+                "url": "tebulo@2x.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -257,7 +257,7 @@ const projects = [
             "alt": "",
             "title": "tebulo",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/tebulo@2x-e1510305545877.jpg",
+            "url": "tebulo@2x-e1510305545877.jpg",
             "width": 800,
             "height": 500
         },
@@ -277,7 +277,7 @@ const projects = [
         "stack_tag": [3, 2],
         "gallery": [
             {
-                "url": "../Assets/img/projects/turfsystems@2x.jpg",
+                "url": "turfsystems@2x.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -285,7 +285,7 @@ const projects = [
             "alt": "",
             "title": "turfsystems",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/turfsystems@2x-e1510305530911.jpg",
+            "url": "turfsystems@2x-e1510305530911.jpg",
             "width": 800,
             "height": 500
         },
@@ -305,7 +305,7 @@ const projects = [
         "stack_tag": [3, 2],
         "gallery": [
             {
-                "url": "../Assets/img/projects/wentworthlandscapes@2x.jpg",
+                "url": "wentworthlandscapes@2x.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -313,7 +313,7 @@ const projects = [
             "alt": "",
             "title": "wentworthlandscapes",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/wentworthlandscapes@2x-e1510305411634.jpg",
+            "url": "wentworthlandscapes@2x-e1510305411634.jpg",
             "width": 800,
             "height": 500
         },
@@ -333,7 +333,7 @@ const projects = [
         "stack_tag": [3],
         "gallery": [
             {
-                "url": "../Assets/img/projects/acornlandscapesupply@2x.jpg",
+                "url": "acornlandscapesupply@2x.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -341,7 +341,7 @@ const projects = [
             "alt": "",
             "title": "acornlandscapesupply",
             "mime_type": "image/jpeg",
-            "url": "../Assets/img/projects/acornlandscapesupply@2x-e1510305582501.jpg",
+            "url": "acornlandscapesupply@2x-e1510305582501.jpg",
             "width": 800,
             "height": 500
         },
@@ -352,3 +352,5 @@ const projects = [
         "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."
     }
 ]
+
+export default projects;

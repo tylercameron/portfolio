@@ -30,8 +30,9 @@ class Thumbnail extends PureComponent {
         const { img, title, subhd, selectedTag } = this.props
         const { hovered } = this.state
 
+        const bgImage = require(`../../Assets/img/projects/${img}`);
         const bg = {
-            backgroundImage: `url(${img})`,
+            backgroundImage: `url(${bgImage})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover'
         }        
@@ -53,7 +54,7 @@ class Thumbnail extends PureComponent {
         }
 
         return (
-            <div className={containerClassList.join(' ')} style={bg} onMouseEnter={this.onHoverOver} onMouseOver={this.onHoverOver} onMouseLeave={this.onHoverOut} onClick={this.onHoverOver} >
+            <div className={containerClassList.join(' ')} style={bg} onMouseEnter={this.onHoverOver} onMouseOver={this.onHoverOver} onMouseLeave={this.onHoverOut} onClick={this.onHoverOver} >                    
                 <div className={titlesClassList.join(' ')}>
                     <h2 className="thumb__h2">{title}</h2>
                     <h3 className="thumb__h3">{subhd}</h3>
