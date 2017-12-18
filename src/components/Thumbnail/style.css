@@ -1,0 +1,152 @@
+.thumb__container {
+    height: 260px;
+    width: 100%;   
+    position: relative;
+    display: inline-block;
+    margin: 0 1.5px 3px 1.5px;
+
+    opacity: 1;
+
+    transition: 1s opacity ease;
+}
+
+.thumb__container.hidden {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+
+    transform: translateY(200%) translateX(0px);
+
+    transition: 2s opacity ease;
+}
+
+.thumb__container::before {
+    opacity: 0;
+
+    background: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0px;
+    left: 0px;
+    content: '';
+
+    transition: 1s all;
+    transition-delay: 0.1s;
+}
+
+.thumb__container.hovered:before {
+    opacity: 1;
+
+    z-index: 1;
+
+    transition: 0.4s all;
+}
+
+.thumb__titles {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s all;
+    width: calc(100% - 20px);
+}
+
+.thumb__titles.hovered {
+    opacity: 1;
+    transform: translateX(-50%) translateY(50px);
+    transition: 0.4s all;
+    transition-delay: 0.1s;
+
+    z-index: 2;
+}
+
+.thumb__h2 {
+    color: #000;
+    font-size: 26px;
+    font-weight: 400;
+
+    margin: 0;
+}
+
+.thumb__h3 {
+    color: #ff3d38;
+    font-weight: 300;
+    text-align: center;
+
+    margin: 5px 20px 0;
+}
+
+.thumb__link {
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    width: initial;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.4s all;
+
+    border: 2px solid #ff3d38;
+    padding: 10px 20px;
+
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.thumb__link.hovered {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-60px);
+    transition: 0.4s all;
+    transition-delay: 0.1s;
+
+    z-index: 2;
+}
+
+.thumb__link:hover,
+.thumb__link:focus {
+    background: #ff3d38;
+    color: white !important;
+}
+
+@media screen and (min-width: 500px) {
+    .thumb__container {
+        height: 280px;
+    }
+
+    .thumb__link.hovered {
+        transform: translateX(-50%) translateY(-70px);
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .thumb__container {
+        width: calc(50% - 3px);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .thumb__container {
+        width: calc(33.3333333% - 3px);  
+    }
+
+    .thumb__titles.hovered {
+        transform: translateX(-50%) translateY(60px);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .thumb__container {
+        height: 300px;
+    }
+
+    .thumb__link.hovered {
+        transform: translateX(-50%) translateY(-80px);
+    }
+}
+

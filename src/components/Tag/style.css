@@ -1,0 +1,42 @@
+.filter-item {
+    font-size: 18px;
+    font-weight: bold;
+    /* padding: 5px 18px; */
+    padding: 0 0 2px 0;
+    margin: 5px 28px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.filter-item:hover {
+    border-bottom: 2px solid #ff3d38;
+    padding-bottom: 0;
+}
+
+.filter-item.active {
+    color: white;
+    background: #ff3d38;
+    cursor: default;
+    
+    margin: 0 10px;
+    padding: 5px 18px;
+    
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.filter-item.active:hover {
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 450px) {
+
+    .filter-item.active {
+        margin: 0;
+        padding: 5px 10px;
+    }
+    
+    .filter-item {
+        margin: 5px 10px;
+    }
+}
