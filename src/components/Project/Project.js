@@ -38,10 +38,10 @@ class Project extends Component {
                 <div className={mounted ? "proj__container mounted" : "proj__container"} onClick={this.stopPropagation} onTransitionEnd={this.transitionEnd}>    
                     <span className="proj__close" onClick={this.close}>X</span>
                     <Slider images={featImages} />
-                    <h2 className="proj__title">{project.acf.page_title}</h2>
-                    <h3 className="proj__subhd">{project.acf.page_subheading}</h3>
-                    <p className="proj__desc">{project.acf.page_description}</p>
-                    <a href={project.acf.url} className="proj__link">
+                    <h2 className="proj__title">{project.page_title}</h2>
+                    <h3 className="proj__subhd">{project.page_subheading}</h3>
+                    <p className="proj__desc">{project.page_description}</p>
+                    <a href={project.site_url} className="proj__link">
                         <button className="proj__btn">View Website</button>
                     </a>
                 </div>

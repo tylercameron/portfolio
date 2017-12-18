@@ -2,8 +2,9 @@ import React from 'react';
 import './style.css';
 
 const Slide = ({image, activeIndex, index}) => {
+    const bgImage = require(`../../Assets/img/projects/${image.url}`);
     const bg = {
-        backgroundImage: `url(${image.guid})`
+        backgroundImage: `url(${bgImage})`
     }
 
     let classList = ["slide"]
