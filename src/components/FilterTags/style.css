@@ -11,6 +11,19 @@
     max-width: 800px;
 }
 
+.filter-list__container {
+    /* background: linear-gradient(90deg, rgb(160, 38, 191) 0%, rgb(28, 195, 255) 100%); */
+    background: linear-gradient(90deg, rgb(220, 92, 253) 0%, rgb(105, 174, 255) 35%, #fea54c 66%, rgb(255, 71, 71) 95%);
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    font-family: 'Poiret One', cursive;
+
+    margin: 15px auto;
+}
+
 @media screen and (max-width: 750px) {
 
     .filter-list {

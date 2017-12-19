@@ -18,10 +18,12 @@ class FilterTags extends Component {
 
         return (
             <ul className="filter-list">
-                <Tag title="All" id="all" filterTag={selectedTag} onTagClick={this.onTagClick}/>
-                <Tag title="CMS" id={3} filterTag={selectedTag} onTagClick={this.onTagClick}/>
-                <Tag title="Javascript" id={2} filterTag={selectedTag} onTagClick={this.onTagClick}/>
-                <Tag title="Ruby" id={5} filterTag={selectedTag} onTagClick={this.onTagClick}/>
+                <div className="filter-list__container">
+                    <Tag title="All" id="all" filterTag={selectedTag} onTagClick={this.onTagClick}/>
+                    <Tag title="CMS" id={3} filterTag={selectedTag} onTagClick={this.onTagClick}/>
+                    <Tag title="Javascript" id={2} filterTag={selectedTag} onTagClick={this.onTagClick}/>
+                    <Tag title="Ruby" id={5} filterTag={selectedTag} onTagClick={this.onTagClick}/>
+                </div>
             </ul>
         );
     }

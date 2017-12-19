@@ -1,25 +1,56 @@
 .filter-item {
+    background: #fff;
+
     font-size: 18px;
     font-weight: bold;
-    /* padding: 5px 18px; */
-    padding: 0 0 2px 0;
-    margin: 5px 28px;
+    padding: 5px 18px;
+    /* padding: 0; */
+    /* padding: 0 0 2px 0; */
+    /* margin: 5px 28px; */
+    /* margin-left: 0 10px; */
     cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease;
 }
+/* .filter-item:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    bottom: -20px;
+    border-bottom: 1px solid #3483DF;
+} */
+
+/* .filter-item__inner {
+    padding: 5px 0;
+
+    margin: 0 18px;
+} */
 
 .filter-item:hover {
-    border-bottom: 2px solid #ff3d38;
-    padding-bottom: 0;
+    /* border-bottom: 2px solid #ff3d38; */
+    /* border-width: 0 0 3px;
+    border-style: solid;
+    -webkit-border-image: -webkit-gradient(90deg, rgb(160, 38, 191) 0%, rgb(28, 195, 255) 100%);
+    -webkit-border-image: -webkit-linear-gradient(90deg, rgb(160, 38, 191) 0%, rgb(28, 195, 255) 100%);
+    -moz-border-image: -moz-linear-gradient(90deg, rgb(160, 38, 191) 0%, rgb(28, 195, 255) 100%);  
+    -o-border-image: -o-linear-gradient(90deg, rgb(160, 38, 191) 0%, rgb(28, 195, 255) 100%);
+    border-image: linear-gradient(90deg, rgb(160, 38, 191) 0%, rgb(28, 195, 255) 100%);  */
+    /* border-bottom: 2px solid linear-gradient(90deg, rgb(160, 38, 191) 0%, rgb(28, 195, 255) 100%); */
+    padding-bottom: 2px;
+    margin-bottom: 3px;
+
+    
 }
 
 .filter-item.active {
     color: white;
-    background: #ff3d38;
+    background: transparent;
+    /* background: #ff3d38; */
+    /* background: linear-gradient(90deg, rgb(160, 38, 191) 0%, rgb(28, 195, 255) 100%); */
     cursor: default;
     
-    margin: 0 10px;
-    padding: 5px 18px;
+    /* margin: 0 10px; */
+    padding: 0 18px;
     
     transition: background 0.4s ease, color 0.4s ease;
 }
@@ -27,6 +58,7 @@
 .filter-item.active:hover {
     border-bottom: none;
     padding-bottom: 5px;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 450px) {
@@ -39,4 +71,13 @@
     .filter-item {
         margin: 5px 10px;
     }
+}
+
+
+.filter-item:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.filter-item:nth-of-type(4) {
+    margin-right: 0;
 }
