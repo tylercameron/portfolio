@@ -15,8 +15,8 @@ class Tag extends Component {
     render() {
         const {filterTag, id, title} = this.props
         return <li className={filterTag === id ? "filter-item active" : "filter-item"} onClick={this.onTagClick}>
-            <div className="filter-item__inner">{title}</div>
-          </li>;
+            {title}
+        </li>;
     }
 }
 

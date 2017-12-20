@@ -39,7 +39,7 @@ class Thumbnail extends PureComponent {
 
         const containerClassList = [`thumb__container`]
         const titlesClassList = ['thumb__titles']
-        const linkClassList = ['thumb__link']
+        const linkClassList = ['thumb__link__container']
 
         if (!selectedTag) {
             containerClassList.push("hidden")
@@ -53,15 +53,17 @@ class Thumbnail extends PureComponent {
             linkClassList.push("hovered")
         }
 
-        return (
-            <div className={containerClassList.join(' ')} style={bg} onMouseEnter={this.onHoverOver} onMouseOver={this.onHoverOver} onMouseLeave={this.onHoverOut} onClick={this.onHoverOver} >                    
-                <div className={titlesClassList.join(' ')}>
-                    <h2 className="thumb__h2">{title}</h2>
-                    <h3 className="thumb__h3">{subhd}</h3>
-                </div>
-                <a href="" className={linkClassList.join(' ')} onClick={this.onLinkClick}>Learn&nbsp;More</a>
+        return <div className={containerClassList.join(" ")} style={bg} onMouseEnter={this.onHoverOver} onMouseOver={this.onHoverOver} onMouseLeave={this.onHoverOut} onClick={this.onHoverOver}>
+            <div className={titlesClassList.join(" ")}>
+              <h2 className="thumb__h2">{title}</h2>
+              <h3 className="thumb__h3">{subhd}</h3>
             </div>
-        );
+            <div className={linkClassList.join(" ")}>
+              <a href="" className="thumb__link" onClick={this.onLinkClick}>
+                Learn&nbsp;More
+              </a>
+            </div>
+          </div>;
     }
 }
 
