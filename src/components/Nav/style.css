@@ -9,7 +9,7 @@
 }
 
 .nav-item {
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 
@@ -71,14 +71,14 @@
 
 
 
-.nav-item a {
+/* .nav-item a {
     background: none;
     border: 0;
     box-sizing: border-box;
     margin: 1em;
     padding: 1em 2em;
   
-    box-shadow: inset 0 0 0 2px red;
+    box-shadow: inset 0 0 0 2px transparent;
     color: red;
     font-size: inherit;
     font-weight: 700;
@@ -138,27 +138,28 @@
       border-color 0s ease-out 0.5s, 
       width 0.25s ease-out 0.5s, 
       height 0.25s ease-out 0.75s; 
-}
+} */
 
 
-/* .nav-item a {
+.nav-item a {
     background: none;
     border: 0;
     box-sizing: border-box;
-    margin: 1em;
-    padding: 1em 2em;
+    /* margin: 1em; */
+    padding: 8px 15px;
   
-    box-shadow: inset 0 0 0 2px red;
-    color: red;
+    box-shadow: inset 0 0 0 2px transparent;
+    color: #948da1;
     font-size: inherit;
     font-weight: 700;
 
     position: relative;
     vertical-align: middle;
 
-    transition: color 0.25s;
+    /* transition: color 0.25s; */
 
 }
+
 .nav-item a::before,
 .nav-item a::after {
     box-sizing: inherit;
@@ -168,12 +169,12 @@
     height: 100%;
 
 
-    border: 2px solid transparent;
+    /* border: 2px solid transparent;
     width: 0;
-    height: 0;
+    height: 0; */
 }
 
-.nav-item a::before {
+/* .nav-item a::before {
     top: 0;
     left: 0;
 }
@@ -211,3 +212,51 @@
 }
 
  */
+
+
+
+.nav-item a {
+    transition: color 0.25s;    
+}
+.nav-item a::before,
+.nav-item a::after {
+/* // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts */
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+}
+/* // This covers the top & right borders (expands right, then down) */
+.nav-item a::before {
+    top: 0;
+    left: 0;
+}
+
+/* // And this the bottom & left borders (expands left, then up) */
+.nav-item a::after {
+    top: 0;
+    left: 0;
+}
+
+.nav-item a:hover {
+    /* color: yellow; */
+}
+/* // Hover styles */
+.nav-item a:hover::before,
+.nav-item a:hover::after {
+    width: 100%;
+    height: 100%;
+}
+.nav-item a:hover::before {
+    /* border-top-color: #cb68fd;
+    border-right-color: #a087fe; */
+    border-top-color: #9eb9ff;
+    border-right-color: #5e8bff;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; 
+}
+.nav-item a:hover::after {
+    /* border-bottom-color: #aa80fd;
+    border-left-color: #db5cfd; */
+    border-bottom-color: #7fa3ff;
+    border-left-color: #afc5ff;
+    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+}
