@@ -9,9 +9,9 @@ const Logo = (props) => {
         <h1 className="nav-title">
             &#123;&nbsp;
             <Link to="/">
-            <Typist className="nav-span" cursor={{ show: true, hideWhenDone: true, blink: true, element: '|', hideWhenDoneDelay: 3000 }} avgTypingDelay={250} startDelay={2000} >
-                {title}
-            </Typist>
+                <Typist className="nav-span" cursor={{ show: true, hideWhenDone: true, blink: true, element: '|', hideWhenDoneDelay: 3000 }} avgTypingDelay={250} startDelay={2000} >
+                    {title}
+                </Typist>
             </Link>
             &nbsp;&#125;
         </h1>
