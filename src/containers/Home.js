@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import Projects from './Projects/Projects';
 import projects from '../data/projects';
+import BannerHeading from '../components/BannerHeading/BannerHeading';
 
-class Home extends Component {
+class Home extends PureComponent {
     constructor() {
         super();
 
@@ -12,6 +13,7 @@ class Home extends Component {
     }
 
     // componentDidMount() {
+
     //     const projectsUrl = "http://local.site.com/wp-json/wp/v2/projects/?per_page=100"
 
     //     fetch(projectsUrl)
@@ -23,18 +25,17 @@ class Home extends Component {
 
     render() {
         // const projects = this.state
-        let allProjects = null
+        let allProjects = null;
 
         if (projects.length > 1) {
             allProjects = <Projects projects={projects} />
-        }
+        };
 
-        return (
-            <div>
-                {/* <h2>Home PAge</h2> */}
-                {allProjects}
-            </div>
-        );
+        return <div>
+            <BannerHeading />
+            {/* <h2>Home PAge</h2> */}
+            {allProjects}
+        </div>;
     }
 }
 
