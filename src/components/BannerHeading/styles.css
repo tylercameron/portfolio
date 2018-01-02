@@ -1,7 +1,7 @@
-.title.hidden {
+.banner-title.hidden {
     display: none;
 }
 
-.title.visible {
+.banner-title.visible {
     display: block;
 }

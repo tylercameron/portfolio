@@ -14,8 +14,8 @@ import store2 from "../../Assets/icons/store2.svg";
 import tag from "../../Assets/icons/tag.svg";
 import top from "../../Assets/icons/top.svg";
 
-function headerSwipe() {
-    const titles = document.querySelectorAll('.title');
+function rotateTitle() {
+    const titles = document.querySelectorAll('.banner-title');
     const titlesArray = [];
     titles.forEach(item => titlesArray.push(item));
 
@@ -41,7 +41,7 @@ function headerSwipe() {
 class BannerHeading extends Component {
 
     componentDidMount() {
-        headerSwipe();
+        rotateTitle();
     }
 
     render() {
@@ -52,10 +52,10 @@ class BannerHeading extends Component {
                 </p>*/}
                 <div className="inner">
                         
-                        <h3 className="title visible" >Front End</h3>
-                        <h3 className="title hidden" >Back End</h3>
-                        <h3 className="title hidden" >Full Stack</h3>
-                        <h3 className="title hidden" >Web Developer</h3>
+                    <h2 className="banner-title visible" >Front End</h2>
+                    <h2 className="banner-title hidden" >Back End</h2>
+                    <h2 className="banner-title hidden" >Full Stack</h2>
+                    <h2 className="banner-title hidden" >Web Developer</h2>
                     
                     <h2 className="title-test">Full Stack Web Developer</h2>
                     <p className="par">Fav's:::: Javascript <span>👌</span> <br />React <br />Node.js💪</p>
