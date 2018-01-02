@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "./styles.css";
 
+import rotateTitle from '../../helpers/rotateTitle';
+
 import add from '../../Assets/icons/add.svg';
 import cog from "../../Assets/icons/cog.svg";
 import heart from "../../Assets/icons/heart.svg";
@@ -13,30 +15,6 @@ import store from "../../Assets/icons/store.svg";
 import store2 from "../../Assets/icons/store2.svg";
 import tag from "../../Assets/icons/tag.svg";
 import top from "../../Assets/icons/top.svg";
-
-function rotateTitle() {
-    const titles = document.querySelectorAll('.banner-title');
-    const titlesArray = [];
-    titles.forEach(item => titlesArray.push(item));
-
-    setInterval(function() {
-        let activeIndex = titlesArray.findIndex(x => (x.className.includes('visible')));
-        
-        if (activeIndex === titlesArray.length - 1) {
-            titlesArray[activeIndex].classList.remove('visible');
-            titlesArray[activeIndex].classList.add('hidden');
-
-            titlesArray[0].classList.remove('hidden');
-            titlesArray[0].classList.add('visible');
-        } else {
-            titlesArray[activeIndex].classList.remove('visible');
-            titlesArray[activeIndex].classList.add('hidden');
-
-            titlesArray[activeIndex + 1].classList.remove('hidden');
-            titlesArray[activeIndex + 1].classList.add('visible');
-        }
-    }, 1200);
-}
 
 class BannerHeading extends Component {
 
