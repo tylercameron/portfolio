@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import Projects from './Projects/Projects';
 import projects from '../data/projects';
-import BannerHeading from '../components/BannerHeading/BannerHeading';
+import Banner from '../components/Banner/Banner';
 
 class Home extends PureComponent {
     constructor() {
@@ -32,7 +32,7 @@ class Home extends PureComponent {
         };
 
         return <div>
-            <BannerHeading />
+            <Banner />
             {/* <h2>Home PAge</h2> */}
             {allProjects}
         </div>;
