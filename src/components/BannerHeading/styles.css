@@ -5,3 +5,8 @@
 .banner-title.visible {
     display: block;
 }
+
+.home-banner {
+    position: absolute;
+    top: calc(50vh - 180px);
+}
