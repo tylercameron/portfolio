@@ -21,7 +21,7 @@ function rotateTitle() {
     //     }
     // }, 1200);
     
-    let timer = 1200;
+    let timer = 7000;
 
     for (let i = 1; i < titlesArray.length; i++) {
         setTimeout(() => {
