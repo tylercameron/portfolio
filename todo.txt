@@ -5,3 +5,5 @@
 - edit colours of nav btns
 - create bg for banner
 - remove unnecessary code from create-react boiler
+
+- render on server with next.js
