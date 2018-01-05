@@ -1,6 +1,11 @@
 .banner {
     height: calc(100vh - 91px);
 
+    background: url('../../Assets/img/banner.jpg');
+    background-size: cover;
+    background-position: top center;
+    border-bottom: 2px solid black;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
