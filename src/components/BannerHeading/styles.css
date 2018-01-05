@@ -9,4 +9,6 @@
 .home-banner {
     position: absolute;
     top: calc(50vh - 180px);
+    left: 50%;
+    transform: translateX(-50%);
 }
