@@ -28,7 +28,7 @@ class Banner extends Component {
                 <div id="banner-filter"></div>
                 <BannerHeading />
 
-                <div>
+                {/*<div>
                     <h2 className="title-test">Full Stack Web Developer</h2>
                     <p className="par">Fav's:::: Javascript <span>👌</span> <br />React <br />Node.js💪</p>
                     <img src={add} alt="" style={{ width: "50px", height: "50px" }} />
@@ -43,7 +43,7 @@ class Banner extends Component {
                     <img src={store2} alt="" style={{ width: "50px", height: "50px" }} />
                     <img src={tag} alt="" style={{ width: "50px", height: "50px" }} />
                     <img src={top} alt="" style={{ width: "50px", height: "50px" }} />
-                </div>
+                </div>*/}
             </div>
         );
     }
