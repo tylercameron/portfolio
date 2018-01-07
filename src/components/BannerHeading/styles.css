@@ -1,27 +1,40 @@
-.banner-title {
-    font-size: 32px;
-    font-weight: 500;
+.inner {
+    position: relative;
 }
 
-.banner-title.hidden {
-    display: none;
+.banner-title {
+    position: absolute;
+    margin: 0 25px;
+    padding: 25px;
+
+    background: #c7d5ff;
+    font-size: 32px;
+    font-weight: 500;
+
+    opacity: 0;
+
+    transform: skew(-1deg, -4deg);
+    /* transform: skew(0, -3deg); */
 }
 
 .banner-title.visible {
     display: block;
-}
+    position: relative;
 
-.banner-title.visible.bg {
-    /* background: red; */
+    margin: 25px;
+
+    opacity: 1;
+
+    background: #28ffa6;
+
+    transition: background-color .8s;
 }
 
 .home-banner {
     position: absolute;
-    top: calc(50vh - 180px);
+    top: calc(50vh - 150px);
     left: 50%;
     transform: translateX(-50%);
-
-    width: 100%;
 }
 
 /* .inner {
@@ -68,11 +81,8 @@
     transition: width .5s .5s;
 } */
 
-.banner-title.visible {
-    position: relative;
-}
 
-.banner-title.visible::before {
+/* .banner-title.visible::before {
     content: '';
     position: absolute;
     left: 0;
@@ -110,4 +120,4 @@
     width: 100%;
 
     transition: width .5s .5s;
-}
+} */
