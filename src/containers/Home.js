@@ -4,13 +4,13 @@ import projects from '../data/projects';
 import Banner from '../components/Banner/Banner';
 
 class Home extends PureComponent {
-    constructor() {
-        super();
+    // constructor() {
+    //     super();
 
-        this.state = {
-            projects
-        }
-    }
+    //     this.state = {
+    //         projects
+    //     }
+    // }
 
     // componentDidMount() {
 
@@ -33,7 +33,6 @@ class Home extends PureComponent {
 
         return <div>
             <Banner />
-            {/* <h2>Home PAge</h2> */}
             {allProjects}
         </div>;
     }
