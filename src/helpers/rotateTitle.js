@@ -1,6 +1,6 @@
 function rotateTitle() {
     const titles = document.querySelectorAll('.banner-title');
-    const banner = document.querySelector('.banner');
+    const header = document.querySelector('.header');
     const titlesArray = [];
     titles.forEach(item => titlesArray.push(item));
 
@@ -40,12 +40,12 @@ function rotateTitle() {
         }, timer);
 
         setTimeout(() => {
-            banner.classList.add('border');
-        }, timer - 300);
+            header.classList.add('border');
+        }, timer - 900);
 
         setTimeout(() => {
-            banner.classList.remove('border');
-        }, timer + 700);
+            header.classList.remove('border');
+        }, timer + 100);
 
         timer += 1800;
     }
