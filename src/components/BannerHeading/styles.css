@@ -14,7 +14,6 @@
     opacity: 0;
 
     transform: skew(-1deg, -4deg);
-    /* transform: skew(0, -3deg); */
 }
 
 .banner-title.visible {
@@ -36,88 +35,3 @@
     left: 50%;
     transform: translateX(-50%);
 }
-
-/* .inner {
-    position: relative;
-}
-
-.inner::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-bottom: 3px solid #27ffa6;
-}
-
-.inner::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-bottom: 3px solid white;
-}
-
-.inner.attention::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    right: 0;
-    width: 100%;
-    
-    transition: width .5s;
-}
-
-.inner.attention::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    right: 0;
-    width: 100%;
-
-    transition: width .5s .5s;
-} */
-
-
-/* .banner-title.visible::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-bottom: 3px solid #27ffa6;
-}
-
-.banner-title.visible::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 100%;
-    border-bottom: 3px solid white;
-}
-
-.banner-title.visible.attention::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    right: 0;
-    width: 100%;
-    
-    transition: width .5s;
-}
-
-.banner-title.visible.attention::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    right: 0;
-    width: 100%;
-
-    transition: width .5s .5s;
-} */
