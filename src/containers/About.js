@@ -29,9 +29,9 @@ class About extends Component {
         return (
             <div>
                 <h2>## TITLE</h2>
-                <label htmlFor="description-length">Just a little &nbsp;
+                <label htmlFor="description-length">I don't want to know much &nbsp;
                     <input type="range" id="description-length" min="0" value={descriptionSlider} max="10" onChange={this.descriptionInput} />
-                    &nbsp; Show me everything
+                    &nbsp; I want all the details!
                 </label>
                 <br/>
                 <div className="descrip__container">
