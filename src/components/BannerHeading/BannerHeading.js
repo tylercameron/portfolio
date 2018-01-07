@@ -17,10 +17,10 @@ class BannerHeading extends Component {
                 </p>*/}
                 <div className="inner"> 
                     <h2 className="banner-title visible">Web Developer</h2>
-                    <h2 className="banner-title hidden">Front End</h2>
-                    <h2 className="banner-title hidden">Back End</h2>
-                    <h2 className="banner-title hidden">Full Stack</h2>
-                    <h2 className="banner-title hidden">Web Developer.</h2>
+                    <h2 className="banner-title">Front End</h2>
+                    <h2 className="banner-title">Back End</h2>
+                    <h2 className="banner-title">Full Stack</h2>
+                    <h2 className="banner-title">Web Developer.</h2>
                 </div>
             </div>
         );
