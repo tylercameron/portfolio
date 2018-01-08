@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import Projects from './Projects/Projects';
+import About from './About';
 import projects from '../data/projects';
 import Banner from '../components/Banner/Banner';
 
@@ -33,6 +34,7 @@ class Home extends PureComponent {
 
         return <div>
             <Banner />
+            <About />
             {allProjects}
         </div>;
     }
