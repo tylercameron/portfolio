@@ -6,3 +6,28 @@ p.descrp {
     font-size: 18px;
     line-height: 1.5;
 }
+
+.tech-stack {
+    margin:  4rem 0 7rem;
+}
+
+.stack-box {
+    border: 1px solid;
+    height:  20px;
+    width: 400px;
+    position:  relative;
+    margin: auto;
+    overflow:  hidden;
+}
+
+.js-rating {
+    position:  absolute;
+    top: 0;
+    bottom:  0;
+    left:  0;
+    background:  red;
+    height: 20px;
+    /* overflow:  hidden; */
+    width: 260px;
+    clip-path: polygon(0 100%, 0% 0%, 100% 0%, 94% 100%);
+}
