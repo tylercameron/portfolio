@@ -3,18 +3,18 @@ import BannerHeading from '../BannerHeading/BannerHeading';
 import './style.css';
 import spotlight from '../../helpers/spotlight';
 
-import add from '../../Assets/icons/add.svg';
-import cog from "../../Assets/icons/cog.svg";
-import heart from "../../Assets/icons/heart.svg";
-import logo from "../../Assets/icons/logo.svg";
-import logout from "../../Assets/icons/logout.svg";
-import map from "../../Assets/icons/map.svg";
-import pencil from "../../Assets/icons/pencil.svg";
-import review from "../../Assets/icons/review.svg";
-import store from "../../Assets/icons/store.svg";
-import store2 from "../../Assets/icons/store2.svg";
-import tag from "../../Assets/icons/tag.svg";
-import top from "../../Assets/icons/top.svg";
+// import add from '../../Assets/icons/add.svg';
+// import cog from "../../Assets/icons/cog.svg";
+// import heart from "../../Assets/icons/heart.svg";
+// import logo from "../../Assets/icons/logo.svg";
+// import logout from "../../Assets/icons/logout.svg";
+// import map from "../../Assets/icons/map.svg";
+// import pencil from "../../Assets/icons/pencil.svg";
+// import review from "../../Assets/icons/review.svg";
+// import store from "../../Assets/icons/store.svg";
+// import store2 from "../../Assets/icons/store2.svg";
+// import tag from "../../Assets/icons/tag.svg";
+// import top from "../../Assets/icons/top.svg";
 
 class Banner extends Component {
 
