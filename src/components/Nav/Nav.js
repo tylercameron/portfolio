@@ -1,20 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-scroll'
 import './style.css';
 
 const Nav = () => {
     return (
         <nav>
             <ul className="nav-list">
-                {/* <li className="nav-item"><Link to="/">Home</Link></li> */}
-                {/* <li><Link to="/home/project">Project</Link></li> */}
-                <li className="nav-item"><HashLink to="/#projects">Projects</HashLink></li>
-                <li className="nav-item"><Link to="/about">About</Link></li>
-                <li className="nav-item"><HashLink to="/#about">About</HashLink></li>
+                <li className="nav-item">
+                    <Link activeClass="active" to="projects" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>Projects</Link>
+                </li>
+                <li className="nav-item">
+                    <Link activeClass="active" to="about" spy={true} smooth={true} offset={0} duration={500} onSetActive={this.handleSetActive}>About</Link>
+                </li>
             </ul>
         </nav>
-    )
+    );
 }
 
 export default Nav;
