@@ -1,52 +1,4 @@
 import React, { Component } from 'react';
-import { Link, Route, BrowserRouter } from 'react-router-dom';
-import aboutData from '../data/aboutData';
-// import * as Scroll from 'react-scroll';
-import { Element } from 'react-scroll'
-
-import './style.css';
-
-class Description extends Component {
-    constructor() {
-        super();
-
-        this.state = {
-            descriptionSlider: 5,
-            description: aboutData[5].blurb
-        }
-
-        this.descriptionInput = this.descriptionInput.bind(this);
-    }
-
-    descriptionInput(e) {
-        this.setState({
-            descriptionSlider: e.target.value,
-            description: aboutData[e.target.value].blurb
-        });
-    }
-
-    render() {
-        const { descriptionSlider, description } = this.state;
-
-        return (
-            <div className="description-container">
-                <h4 className="slider-title">How much do you want to know?</h4>
-                <label htmlFor="description-length" className="label"><span className="label--before">Not much</span> &nbsp;
-                        <input type="range" id="description-length" min="0" value={descriptionSlider} max="10" onChange={this.descriptionInput} />
-                    &nbsp; <span className="label--after">All the details!</span>
-                </label>
-                <br />
-                <div className="descrip__container">
-                    <p className="descrp">
-                        {description}
-                    </p>
-                </div>
-            </div>
-        );
-    }
-}
-
-// export default Description;
 
 class TechStack extends Component {
     // componentDidMount() {
@@ -88,7 +40,7 @@ class TechStack extends Component {
     //     }
 
     // }
-    
+
     render() {
         return (
             <div id="test1" className="tech-stack">
@@ -132,38 +84,4 @@ class TechStack extends Component {
     }
 }
 
-// export default TechStack;
-
-// class About extends Component {
-const About = () => (
-
-
-    // render() {
-        // return (
-    <Element id="about" className="about">
-            
-                {/*<Link activeClass="active" to="test1" spy={true} smooth={true} offset={-50} duration={500} onSetActive={this.handleSetActive}>
-                    My Tech Stack
-                </Link> */}
-
-                <BrowserRouter>
-                    <div>
-                        <Link to={`/`}>Description</Link>
-                        <Link to={`/tech`}>Tech Stack</Link>
-                        <h2 className="about-header">About Me</h2>
-                        <Route exact path="/" component={Description} />
-                        <Route path="/tech" component={TechStack} />
-                    </div>
-                </BrowserRouter>
-
-                <div className="test">
-                    <p className="lorem">Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta.Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.Pellentesque in ipsum id orci porta dapibus. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-    </Element>
-        // );
-    // }
-);
-
-// }
-
-export default About;
+export default TechStack;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import Slide from '../Slide/Slide';
+import Slide from '../../components/Slide/Slide';
 import lefty from '../../Assets/lefty.svg';
 import righty from '../../Assets/righty.svg';
 

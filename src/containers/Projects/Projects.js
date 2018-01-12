@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Element } from 'react-scroll'
 import './styles.css';
-import Thumbnail from '../../components/Thumbnail/Thumbnail';
-import Project from '../../components/Project/Project';
+import Thumbnail from '../Thumbnail/Thumbnail';
+import Project from '../Project/Project';
 import FilterTags from '../../components/FilterTags/FilterTags';
 
 class Projects extends Component {
