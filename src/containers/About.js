@@ -75,9 +75,9 @@ class About extends Component {
                 </Link>
                 <h2 className="about-header">About Me</h2>
                 <h4 className="slider-title">How much do you want to know?</h4>
-                <label htmlFor="description-length">Not much &nbsp;
+                <label htmlFor="description-length" className="label"><span className="label--before">Not much</span> &nbsp;
                     <input type="range" id="description-length" min="0" value={descriptionSlider} max="10" onChange={this.descriptionInput} />
-                    &nbsp; I want all the details!
+                    &nbsp; <span className="label--after">All the details!</span>
                 </label>
                 <br/>
                 <div className="descrip__container">

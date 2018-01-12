@@ -1,9 +1,0 @@
-- add tech stack list
-- add about section
-    > maybe add slider that changes description to be longer / shorter
-- add to branch of current live repo
-- edit colours of nav btns
-- create bg for banner
-- remove unnecessary code from create-react boiler
-
-- render on server with next.js

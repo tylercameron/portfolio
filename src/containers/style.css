@@ -92,6 +92,20 @@ p.descrp {
     font-weight: 900;
 }
 
+.label {
+    position:  relative;
+}
+
+.label--before,
+.label--after {
+    position:  absolute;
+    line-height: 20px;
+    width: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
 input[type=range] {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
   width: 100%; /* Specific width is required for Firefox. */
