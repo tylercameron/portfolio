@@ -10,17 +10,13 @@ import About from "./containers/About";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
-          <Header />
-
-          <Route exact path="/" component={Home} />
-          <Route path="/home" component={Home}>
-            {/* <Route path="/home/project" component={Project} /> */}
-          </Route>
-          <Route path="/about" component={About} />
-        </div>
-      </BrowserRouter>
+      <div className="App">
+        <Header />
+        <Home />
+        <BrowserRouter>
+          <Route exact path="/" component={About} />
+        </BrowserRouter>
+      </div>
     );
   }
 }
