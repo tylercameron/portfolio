@@ -105,6 +105,13 @@ p.descrp {
     transform: translateY(-50%);
 }
 
+.label--after {
+    right:  -80px;
+}
+
+.label--before {
+    left: -80px;
+}
 
 input[type=range] {
   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
