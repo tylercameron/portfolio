@@ -23,6 +23,8 @@
     position: relative;
     vertical-align: middle;
 
+    cursor: pointer;
+
     /* transition: color 0.25s; */
 }
 
