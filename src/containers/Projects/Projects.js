@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Element } from 'react-scroll'
 import './styles.css';
 import Thumbnail from '../../components/Thumbnail/Thumbnail';
 import Project from '../../components/Project/Project';
@@ -56,12 +57,14 @@ class Projects extends Component {
             project = <Project project={this.state.selectedProj} onClose={this.onCloseSelected}/>
         }
 
-        return <div className="projects" id="projects">
-            <h1 className="proj-thmbs__title">PROJECTS</h1>
-            <FilterTags selectedTag={filterTag} onTagClick={this.onFilterTags} />
-            <div className="proj-thmbs">{projectThumbs}</div>
-            {project}
-          </div>;
+        return (
+            <Element className="projects" id="projects">
+                <h1 className="proj-thmbs__title">PROJECTS</h1>
+                <FilterTags selectedTag={filterTag} onTagClick={this.onFilterTags} />
+                <div className="proj-thmbs">{projectThumbs}</div>
+                {project}
+            </Element>
+        );
     }
 }
 
