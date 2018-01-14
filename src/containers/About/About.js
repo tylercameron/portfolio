@@ -38,7 +38,7 @@ class About extends Component {
                             <h2 className="about-h2">About<br/>Tyler</h2>                            
                             <nav className="subnav">
                                 <ul className="subnav__list">
-                                    <li className="subnav__item"><NavLink to={`/bio`} exact activeClassName="active">Bio</NavLink></li>
+                                    <li className="subnav__item"><NavLink to={`/`} exact activeClassName="active">Bio</NavLink></li>
                                     <li className="subnav__item"><NavLink to={`/tech`} exact activeClassName="active">Tech-Stack</NavLink></li>
                                     <li className="subnav__item"><NavLink to={`/tech`} exact activeClassName="active">Contact</NavLink></li>
                                 </ul>
@@ -46,7 +46,7 @@ class About extends Component {
                         </div>
                         <div className="about__container">
                             <div className="about-content">
-                                <Route exact path="/bio" component={
+                                <Route exact path="/" component={
                                     () => (
                                         <AboutDescription 
                                             description={description} 
