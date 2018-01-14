@@ -1,13 +1,103 @@
 .about {
     min-height:  100vh;
     border-bottom: 2px solid #28ffa682;
+
+    position: relative;
+}
+
+.about-header {
+    background: linear-gradient(30deg, rgb(40,255,166), rgba(70, 255, 249,.75));
+    clip-path: polygon(0 100%, 0% 0%, 100% 0%, 100% 80%);
+    color: white;
+    height: 150px;
+    margin: 0;
+    padding: 20px;
+
+    display:  flex;
+    justify-content:  flex-end;
+    align-items: center;
+}
+
+.about-h2 {
+    color:  black;
+    font-family: 'Poiret One', cursive;
+    font-size:  75px;
+    font-style:  italic;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height:  1;
+    text-transform:  uppercase;
+    
+    margin: 0 0 60px;
+    position:  absolute;
+    top: 26px;
+    left: 35px;
+}
+
+.subnav__list {
+    margin: 20px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.subnav {
+    display:  flex;
+    justify-content: flex-end;
+    color: #2d715c;
+}
+
+.subnav__item {
+    margin:  0 25px;
+
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform:  none;
+}
+
+.subnav__item a {
+    position: relative;
+}
+
+.subnav__item a:before,
+.subnav__item a.active:before {
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    
+    content: '';
+    border-bottom: 3px solid #000;
+    transform: translateX(-50%);
+
+    transition: width 0.3s ease-in;
+}
+
+.subnav__item a:before {
+    width: 0;
+}
+
+.subnav__item a.active:before {
+    width: 25px;
+}
+
+.subnav__item a:hover:before {
+    border-bottom: 3px solid #000;
+    width: 25px;
+
+    transition: width 0.3s ease-in;
+}
+
+.subnav__item a.active:hover:before {
+    width: 25px;
 }
 
 .descrip__container {
     margin: 2rem 4rem;
 }
 
-p.descrp {
+.descrp {
     font-size: 18px;
     line-height: 1.5;
 }
