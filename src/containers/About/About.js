@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Route, BrowserRouter } from 'react-router-dom';
+import { NavLink, Route, BrowserRouter } from 'react-router-dom';
 import { Element } from 'react-scroll'
 
 import AboutDescription from '../AboutDescription';
@@ -34,22 +34,29 @@ class About extends Component {
             <Element id="about" className="about">
                 <BrowserRouter>
                     <div>
-                        <h2 className="about-header">About Me</h2>
-                        <nav className="subnav">
-                            <li className="subnav__item"><Link to={`/`}>Description</Link></li>
-                            <li className="subnav__item"><Link to={`/tech`}>Tech Stack</Link></li>
-                        </nav>
-                        <Route exact path="/" component={
-                            () => (
-                                <AboutDescription 
-                                    description={description} 
-                                    descriptionSlider={descriptionSlider} 
-                                    onSliderChange={this.handleSliderChange}
-                                />
-                            )} />
-                        <Route path="/tech" component={TechStack} />
-
-                        
+                        <div className="about-header">
+                            <h2 className="about-h2">About<br/>Tyler</h2>                            
+                            <nav className="subnav">
+                                <ul className="subnav__list">
+                                    <li className="subnav__item"><NavLink to={`/bio`} exact activeClassName="active">Bio</NavLink></li>
+                                    <li className="subnav__item"><NavLink to={`/tech`} exact activeClassName="active">Tech-Stack</NavLink></li>
+                                    <li className="subnav__item"><NavLink to={`/tech`} exact activeClassName="active">Contact</NavLink></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div className="about__container">
+                            <div className="about-content">
+                                <Route exact path="/bio" component={
+                                    () => (
+                                        <AboutDescription 
+                                            description={description} 
+                                            descriptionSlider={descriptionSlider} 
+                                            onSliderChange={this.handleSliderChange}
+                                        />
+                                    )} />
+                                <Route path="/tech" component={TechStack} />
+                            </div>
+                        </div>
                     </div>
                 </BrowserRouter>
             </Element>
