@@ -1,0 +1,130 @@
+.descrip__container {
+    margin: 3rem 4rem;
+}
+
+.slider-title {
+    font-size: 22px;
+    margin: 0 auto 15px;
+}
+
+.descrp {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.label {
+    position:  relative;
+}
+
+.label--before,
+.label--after {
+    font-size: 12px;
+    font-weight: 500;
+    color: #cc2316cf;
+    /* color: #009688; */
+    color: #deae01;
+    /* color: #bdbdbd; */
+    text-transform: uppercase;
+
+    position:  absolute;
+    line-height: 20px;
+    width: 80px;
+    top: 1px;
+    /* top: 50%;
+    transform: translateY(-50%); */
+}
+
+.label--after {
+    right:  -80px;
+    right: -120px;
+    width: 120px;
+}
+
+.label--before {
+    left: -80px;
+}
+
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    width: 250px;
+    height: 7px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    outline: none; /* no focus outline */
+}
+input[type=range]::-webkit-slider-runnable-track {
+} 
+
+input[type="range"]::-moz-range-track {
+    border: inherit;
+    background: transparent;
+}
+
+input[type="range"]::-ms-track {
+    border: inherit;
+    color: transparent; /* don't drawn vertical reference line */
+    background: transparent;
+}
+
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+    background: transparent;
+}
+
+input[type="range"]::-ms-tooltip {
+    display: none;
+}
+
+/* thumb */
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: black;
+  box-shadow: 0 0 0 4px #fff;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: black;
+  box-shadow: 0 0 0 4px #fff;
+}
+
+input[type="range"]::-ms-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: black;
+  box-shadow: 0 0 0 4px #fff;
+}
