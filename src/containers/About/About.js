@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink, Route, BrowserRouter } from 'react-router-dom';
 import { Element } from 'react-scroll'
 
-import AboutDescription from '../AboutDescription';
+import AboutDescription from '../AboutDescription/AboutDescription';
 import TechStack from '../TechStack';
 
 import aboutData from '../../data/aboutData';
@@ -43,20 +43,18 @@ class About extends Component {
                                     <li className="subnav__item"><NavLink to={`/tech`} exact activeClassName="active">Contact</NavLink></li>
                                 </ul>
                             </nav>
-                        </div>
-                        <div className="about__container">
-                            <div className="about-content">
-                                <Route exact path="/" component={
-                                    () => (
-                                        <AboutDescription 
-                                            description={description} 
-                                            descriptionSlider={descriptionSlider} 
-                                            onSliderChange={this.handleSliderChange}
-                                        />
-                                    )} />
-                                <Route path="/tech" component={TechStack} />
-                            </div>
-                        </div>
+                        </div>                        
+                        <div className="about-content">
+                            <Route exact path="/" component={
+                                () => (
+                                    <AboutDescription 
+                                        description={description} 
+                                        descriptionSlider={descriptionSlider} 
+                                        onSliderChange={this.handleSliderChange}
+                                    />
+                                )} />
+                            <Route path="/tech" component={TechStack} />
+                        </div>                        
                     </div>
                 </BrowserRouter>
             </Element>
