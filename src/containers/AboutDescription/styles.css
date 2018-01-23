@@ -1,5 +1,17 @@
+.description-container {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .3s ease-in, transform 0.6s ease-in-out;
+}
+
+.trans {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
 .descrip__container {
     margin: 3rem 4rem;
+    opacity: 1; 
 }
 
 .slider-title {
@@ -56,8 +68,12 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 
-input[type=range]:focus {
+input[type=range]:focus, {
   outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-moz-focus-outer {
+    border: 0;
 }
 
 input[type=range]::-ms-track {
@@ -80,8 +96,6 @@ input[type="range"] {
     border-radius: 5px;
     outline: none; /* no focus outline */
 }
-input[type=range]::-webkit-slider-runnable-track {
-} 
 
 input[type="range"]::-moz-range-track {
     border: inherit;
@@ -116,6 +130,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
   height: 20px;
   width: 20px;
+  border-color: transparent;
   border-radius: 20px;
   background: black;
   box-shadow: 0 0 0 4px #fff;
