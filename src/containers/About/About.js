@@ -3,7 +3,8 @@ import { NavLink, Route, BrowserRouter } from 'react-router-dom';
 import { Element } from 'react-scroll'
 
 import AboutDescription from '../AboutDescription/AboutDescription';
-import TechStack from '../TechStack';
+import TechStack from '../../components/TechStack/TechStack';
+import ContactInfo from '../../components/ContactInfo/ContactInfo';
 
 import aboutData from '../../data/aboutData';
 import './style.css';
@@ -14,10 +15,13 @@ class About extends Component {
 
         this.state = {
             descriptionSlider: 5,
-            description: aboutData[5].blurb
+            description: aboutData[5].blurb,
+            descriptionHasMounted: false
         };
 
         this.handleSliderChange = this.handleSliderChange.bind(this);
+        this.handleBioClick = this.handleBioClick.bind(this);
+        this.handleComponentMount = this.handleComponentMount.bind(this);
     };
 
     handleSliderChange(sliderPos, descrip) {
@@ -27,20 +31,32 @@ class About extends Component {
         });
     };
 
+    handleBioClick() {
+        console.log('bio click');
+    }
+
+    handleComponentMount(bool) {
+        console.log(bool);
+        if (!this.state.descriptionHasMounted) {
+            
+            this.setState({ descriptionHasMounted: bool });
+        }
+    }
+
     render() {
-        const { description, descriptionSlider } = this.state;
+        const { description, descriptionSlider, descriptionHasMounted } = this.state;
         
         return (
             <Element id="about" className="about">
                 <BrowserRouter>
                     <div>
+                        <h2 className="about-h2">About<br/>Tyler</h2>                            
                         <div className="about-header">
-                            <h2 className="about-h2">About<br/>Tyler</h2>                            
                             <nav className="subnav">
                                 <ul className="subnav__list">
-                                    <li className="subnav__item"><NavLink to={`/`} exact activeClassName="active">Bio</NavLink></li>
+                                    <li className="subnav__item"><NavLink to={`/`} exact activeClassName="active" onClick={this.handleBioClick} >Bio</NavLink></li>
                                     <li className="subnav__item"><NavLink to={`/tech`} exact activeClassName="active">Tech-Stack</NavLink></li>
-                                    <li className="subnav__item"><NavLink to={`/tech`} exact activeClassName="active">Contact</NavLink></li>
+                                    <li className="subnav__item"><NavLink to={`/contact`} exact activeClassName="active">Contact</NavLink></li>
                                 </ul>
                             </nav>
                         </div>                        
@@ -51,9 +67,15 @@ class About extends Component {
                                         description={description} 
                                         descriptionSlider={descriptionSlider} 
                                         onSliderChange={this.handleSliderChange}
+                                        hasMounted={descriptionHasMounted}
+                                        onComponentMount={this.handleComponentMount}
                                     />
                                 )} />
-                            <Route path="/tech" component={TechStack} />
+                            <Route path="/tech" component={
+                                () => (
+                                    <TechStack />
+                            )} />
+                            <Route path="/contact" component={ContactInfo} />
                         </div>                        
                     </div>
                 </BrowserRouter>
