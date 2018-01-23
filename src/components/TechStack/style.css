@@ -1,0 +1,91 @@
+.tech-stack {
+    margin:  4rem 0 7rem;
+    opacity: 1;
+    transform: translateX(0);
+
+    transition: opacity 0.4s ease-in, transform 0.8s ease-in-out;
+}
+
+.opac {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.tech-stack__item {
+    margin: 10px 0;
+    display:  flex;
+    justify-content: center;
+}
+
+.stack-title {
+    margin:  0;
+    /* background: #718ebb; */
+    background: #372574;
+    /* background: #a286fe; */
+    /* background: #6f6f6f; */
+    color: white;
+    padding: 5px 0;
+    width: 115px;
+}
+.stack-box {
+    /* background: #93abcf61; */
+    background: #cacacacc;
+    height:  35px;
+    width: 400px;
+    position:  relative;
+    overflow:  hidden;
+}
+
+.rating {
+    position:  absolute;
+    top: 0;
+    bottom:  0;
+    left:  -1px;
+    /* background:  #93abce;
+    background: #57419f;
+    background: #2fffad; */
+    background: linear-gradient(30deg, rgba(83, 61, 154, 0.8), rgba(70, 255, 249,.75));
+    height: 35px;
+    clip-path: polygon(0 100%, 0% 0%, 100% 0%, 98% 100%);
+
+    transition: width 0.8s 0.5s ease-in-out;
+}
+
+.rating--js {
+    width: 80%;
+}
+
+.rating--react {
+    width: 70%;
+}
+
+.rating--html {
+    width: 80%;
+}
+
+.rating--css {
+    width: 80%;
+}
+
+.rating--ruby {
+    width: 60%;
+}
+
+.rating--node {
+    width: 70%;
+}
+
+.rating--vue {
+    width: 60%;
+}
+
+.hidden {
+    width: 0;
+}
+
+.percent {
+    margin:  0;
+    padding: 8px 10px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}

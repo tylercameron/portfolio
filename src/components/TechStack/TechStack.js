@@ -1,49 +1,55 @@
 import React, { Component } from 'react';
+import './style.css';
 
 class TechStack extends Component {
-    // componentDidMount() {
+    componentDidMount() {
+        this.setActive();
+    }
 
-    //     Events.scrollEvent.register('begin', function (to, element) {
-    //         console.log("begin", arguments);
-    //     });
+    componentWillUnmount() {
+        this.removeActive();
+    }
 
-    //     Events.scrollEvent.register('end', function (to, element) {
-    //         console.log("end", arguments);
-    //     });
+    setActive() {
+        const activeView = document.getElementById('tech-stack');
 
-    //     scrollSpy.update();
+        setTimeout(() => {
+            if (activeView.classList.contains('opac')) {
+                activeView.classList.remove('opac');
+            }
+            const children = activeView.children;
+    
+            for (let i = 0; i < children.length; i++) {
+                const ratingsDiv = children[i].children[1].children[0];
+                if (ratingsDiv.classList.contains('hidden')) {
+                    ratingsDiv.classList.remove('hidden');
+                }
+            }
+        }, 10);
 
-    // }
-    // componentWillUnmount() {
-    //     Events.scrollEvent.remove('begin');
-    //     Events.scrollEvent.remove('end');
-    // }
+    }
 
-    // handleSetActive(to) {
-    //     console.log('to', to);
-    //     const activeView = document.getElementById(to);
+    removeActive() {
+        const activeView = document.getElementById('tech-stack');
 
-    //     if (activeView.classList.contains('opac')) {
-    //         activeView.classList.remove('opac');
-    //     }
+        if (!activeView.classList.contains('opac')) {
+            activeView.classList.add('opac');
+        }
 
-    //     const children = activeView.children;
+        const children = activeView.children;
 
-    //     for (let i = 0; i < children.length; i++) {
-    //         // const element = array[i];
-    //         // console.log(children[i].children[1].children);
-    //         const ratingsDiv = children[i].children[1].children[0];
-    //         // console.log(ratingsDiv.classList);
-    //         if (ratingsDiv.classList.contains('hidden')) {
-    //             ratingsDiv.classList.remove('hidden');
-    //         }
-    //     }
-
-    // }
+        for (let i = 0; i < children.length; i++) {
+            const ratingsDiv = children[i].children[1].children[0];
+            
+            if (!ratingsDiv.classList.contains('hidden')) {
+                ratingsDiv.classList.add('hidden');
+            }
+        }
+    }
 
     render() {
         return (
-            <div id="test1" className="tech-stack">
+            <div id="tech-stack" className="tech-stack opac">
                 <div className="tech-stack__item">
                     <h3 className="stack-title">Javascript</h3>
                     <div className="stack-box"><div className="rating rating--js hidden"></div></div>
