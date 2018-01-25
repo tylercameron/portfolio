@@ -71,10 +71,7 @@ class About extends Component {
                                         onComponentMount={this.handleComponentMount}
                                     />
                                 )} />
-                            <Route path="/tech" component={
-                                () => (
-                                    <TechStack />
-                            )} />
+                            <Route path="/tech" component={TechStack} />
                             <Route path="/contact" component={ContactInfo} />
                         </div>                        
                     </div>
