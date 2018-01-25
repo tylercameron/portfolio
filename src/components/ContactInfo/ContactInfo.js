@@ -8,8 +8,8 @@ const ContactInfo = () => (
         <p className="contact-blurb">So many ways to get in touch these days.</p>
         <ul className="contact-list">
             <li className="contact-item"><i className="fas fa-envelope"></i> &nbsp; tcameronsmith@gmail.com</li>
-            <li className="contact-item"><a href="" className="contact-link--social"><i className="fab fa-linkedin"></i> &nbsp; LinkedIn</a></li>
-            <li className="contact-item"><a href="" className="contact-link--social"><i className="fab fa-twitter-square"></i> &nbsp; Twitter</a></li>
+            <li className="contact-item"><a href="https://www.linkedin.com/in/tyler-cameron-smith/" className="contact-link--social"><i className="fab fa-linkedin"></i> &nbsp; LinkedIn</a></li>
+            <li className="contact-item"><a href="https://twitter.com/tycameronsmith" className="contact-link--social"><i className="fab fa-twitter-square"></i> &nbsp; Twitter</a></li>
         </ul>
     </div>
 );
