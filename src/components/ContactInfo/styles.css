@@ -1,5 +1,15 @@
+.contact-title {
+    margin: 40px auto 40px;
+    padding: 40px 0 0;
+}
+
+.contact-blurb {
+    margin: 45px auto 20px;
+}
+
 .contact-list {
     display: flex;
+    margin: 20px auto;
     padding: 0;
     list-style-type: none;
     justify-content: center;
