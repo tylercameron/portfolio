@@ -4,79 +4,12 @@
 
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between;
-    width: 250px; */
 }
 
 .nav-item a {
-    /* background: none; */
-    border: 0;
-    /* box-sizing: border-box; */
-    /* margin: 1em; */
-    padding: 8px 15px;
-  
-    /* box-shadow: inset 0 0 0 2px transparent; */
-    color: #948da1;
-    font-size: inherit;
     font-weight: 700;
 
-    position: relative;
-    /* vertical-align: middle; */
-
     cursor: pointer;
-
-    /* transition: color 0.25s; */
-}
-
-.nav-item a::before,
-.nav-item a::after {
-    /* box-sizing: inherit;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%; */
-}
-
-.nav-item a {
-    /* transition: color 0.25s;     */
-}
-.nav-item a::before,
-.nav-item a::after {
-/* // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts */
-    /* border: 2px solid transparent;
-    width: 0;
-    height: 0; */
-}
-/* // This covers the top & right borders (expands right, then down) */
-.nav-item a::before {
-    /* top: 0;
-    left: 0; */
-}
-
-/* // And this the bottom & left borders (expands left, then up) */
-.nav-item a::after {
-    /* top: 0;
-    left: 0; */
-}
-/* // Hover styles */
-.nav-item a:hover::before,
-.nav-item a:hover::after {
-    /* width: 100%;
-    height: 100%; */
-}
-.nav-item a:hover::before {
-    /* border-top-color: #cb68fd;
-    border-right-color: #a087fe; */
-    /* border-top-color: #9eb9ff;
-    border-right-color: #5e8bff;
-    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;  */
-}
-.nav-item a:hover::after {
-    /* border-bottom-color: #aa80fd;
-    border-left-color: #db5cfd; */
-    /* border-bottom-color: #7fa3ff;
-    border-left-color: #afc5ff;
-    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s; */
 }
 
 #root {
@@ -289,75 +222,39 @@
     #menu-toggle {
         display: none;
     }
-    
-    .nav-item a {
-        background: none;
-        border: 0;
-        box-sizing: border-box;
-        /* margin: 1em; */
-        padding: 8px 15px;
-    
-        box-shadow: inset 0 0 0 2px transparent;
-        color: #948da1;
-        font-size: inherit;
-        font-weight: 700;
 
-        position: relative;
-        vertical-align: middle;
-
-        cursor: pointer;
-
-        /* transition: color 0.25s; */
+    .nav-list {
+        margin: 17px 0 10px;
     }
 
-    .nav-item a::before,
-    .nav-item a::after {
-        box-sizing: inherit;
+    .nav-item {
+        margin-top: 3px;
+    }
+    .nav-item a {
+        color: #8f8f8f;
+        letter-spacing: 1px;
+        
+        position: relative;
+        padding: 0 0 2px;
+        margin: 8px 15px;
+    }
+
+    .nav-item a::before {
         content: '';
         position: absolute;
-        width: 100%;
-        height: 100%;
+        border-bottom: 1px solid #28ffa6;
+        bottom: 0;
+        left: 50%;
+        width: 1%;
+        opacity: 0;
+        transform: translateX(-50%) scaleX(1);
+
+        transition: transform 0.35s ease-out, opacity 0s .45s; 
     }
 
-    .nav-item a {
-        transition: color 0.25s;    
-    }
-    .nav-item a::before,
-    .nav-item a::after {
-    /* // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts */
-        border: 2px solid transparent;
-        width: 0;
-        height: 0;
-    }
-    /* // This covers the top & right borders (expands right, then down) */
-    .nav-item a::before {
-        top: 0;
-        left: 0;
-    }
-
-    /* // And this the bottom & left borders (expands left, then up) */
-    .nav-item a::after {
-        top: 0;
-        left: 0;
-    }
-    /* // Hover styles */
-    .nav-item a:hover::before,
-    .nav-item a:hover::after {
-        width: 100%;
-        height: 100%;
-    }
     .nav-item a:hover::before {
-        /* border-top-color: #cb68fd;
-        border-right-color: #a087fe; */
-        border-top-color: #9eb9ff;
-        border-right-color: #5e8bff;
-        transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; 
-    }
-    .nav-item a:hover::after {
-        /* border-bottom-color: #aa80fd;
-        border-left-color: #db5cfd; */
-        border-bottom-color: #7fa3ff;
-        border-left-color: #afc5ff;
-        transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+        opacity: 1;
+        transform: scaleX(80);
+        transition: transform 0.45s ease-out, opacity 0s; 
     }
 }
