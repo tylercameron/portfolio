@@ -61,3 +61,14 @@
         color: black;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .nav-title {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-title {
+        font-size: 26px;
+    }
+}
