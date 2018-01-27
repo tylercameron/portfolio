@@ -22,6 +22,7 @@
 .descrp {
     font-size: 18px;
     line-height: 1.5;
+    hyphens: auto;
     text-align: justify;
 }
 
@@ -49,7 +50,7 @@
 
 .label--after {
     right:  -80px;
-    right: -120px;
+    right: -118px;
     width: 120px;
 }
 
@@ -142,4 +143,54 @@ input[type="range"]::-ms-thumb {
   border-radius: 20px;
   background: black;
   box-shadow: 0 0 0 4px #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .slider-title {
+        font-size: 20px;
+    }
+
+    .descrip__container {
+        margin: 2rem;
+    }
+
+    .descrp {
+        font-size: 17px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .slider-title {
+        font-size: 18px;
+    }
+
+    .label--after,
+    .label--before {
+        top: -2px;
+        line-height: 1.2;
+    }
+
+    .label--after {
+        right: -65px;
+        width: 70px;
+    }
+
+    .label--before {
+        left: -50px;
+        width: 50px;
+    }
+
+    input[type="range"] {
+        left: -50px;
+        width: 50%;
+    }
+
+    .descrip__container {
+        margin: 2.5rem 1rem;
+    }
+
+    .descrp {
+        font-size: 16px;
+    }
 }

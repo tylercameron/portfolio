@@ -143,4 +143,8 @@
     .subnav__item {
         margin: 0px 15px;
     }
+
+    .about-content {
+        margin: 40px auto;
+    }
 }
