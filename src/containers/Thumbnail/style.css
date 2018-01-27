@@ -15,7 +15,7 @@
     bottom: 0;
     opacity: 0;
 
-    transform: translateY(200%) translateX(0px);
+    /* transform: translateY(200%) translateX(0px); */
 
     transition: 2s opacity ease;
 }
