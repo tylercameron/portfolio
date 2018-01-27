@@ -16,16 +16,16 @@ const projects = [
             "height": 500
         },
         "subheading": "Shopify, Jekyll",
-        "page_title": "",
-        "page_subheading": "",
-        "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.",
+        "page_title": "Just Thinking Book",
+        "page_subheading": "Simple Shopify Store",
+        "page_description": "A simple site, with a clear sales layout for a great book. This Shopify store site has a single page feel. Originally built for one product, there is now a handful more items for sale on the and it was quite easy to scale the site up to accommodate. Complete with great SEO performance, little Javascript functionalities and HTML foundations, this site performs well on all devices.",
         "gallery": [
             {
                 "url": "justthinkingbook@2x.jpg",
                 "post_mime_type": "image/png"     
             }
         ],
-        "site_url": ""
+        "site_url": "https://justthinkingbook.com/"
     },
     {
         "id": 11,
@@ -46,7 +46,7 @@ const projects = [
         "subheading": "Statamic, Javascript",
         "page_title": "Maintemp",
         "page_subheading": "Custom site over template",
-        "page_description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.",
+        "page_description": "Instead of using a template for this quick build, a custom site was created to meet their needs. As a result the look and feel are completely tailored to the company. Being built on the Statamic CMS allows for easy additions to the site. Solid HTML, CSS and Javascript have this site performing great on all screen sizes and loading very quickly too.",
         "gallery": [
             {
                 "url": "Screen-Shot-2017-11-17-at-10.28.17-AM.png",
@@ -72,9 +72,9 @@ const projects = [
             "height": 500
         },
         "subheading": "Craft, Javascript",
-        "page_title": "Pups N Suds Title",
+        "page_title": "Pups N Suds",
         "page_subheading": "Friendly Dog Grooming",
-        "page_description": "Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi, pretium ut lacinia in, elementum id enim.\r\n",
+        "page_description": "Integrating a templated theme partly into this site helped speed up development and produced something that provided a much need facelift the this dog grooming site. The site has had an improvement in site traffic which is being monitored through Google Analytics. The performance of the site is greatly improved too, with a modern single page app feel.",
         "gallery": [
             {                                                
                 "url": "pupsnsuds@2x.jpg",                                
@@ -124,8 +124,8 @@ const projects = [
         "subheading": "Shopify, Rails, Javascript",
         "page_title": "Kooshoo",
         "page_subheading": "Ethical Clothing",
-        "site_url": "",
-        "page_description": "Donec rutrum congue leo eget malesuada. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus."
+        "site_url": "https://www.kooshoo.com/",
+        "page_description": "This Shopify store needed some upgrades to add new functionality to certain shopping and checkout areas. Old Javascript and Rails bugs have been remedied and the shopping experience is now back to the high standards Kooshoo expects."
     },
     {
         "id": 8,
