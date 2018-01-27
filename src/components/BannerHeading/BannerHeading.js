@@ -13,11 +13,11 @@ class BannerHeading extends Component {
         return (
             <div className="home-banner">
                 <div className="inner"> 
-                    <h2 className="banner-title visible">Web Developer</h2>
-                    <h2 className="banner-title">Front End</h2>
-                    <h2 className="banner-title">Back End</h2>
-                    <h2 className="banner-title">Full Stack</h2>
-                    <h2 className="banner-title">Web Developer.</h2>
+                    <h2 className="banner-title visible">Web&nbsp;Developer</h2>
+                    <h2 className="banner-title">Front&nbsp;End</h2>
+                    <h2 className="banner-title">Back&nbsp;End</h2>
+                    <h2 className="banner-title">Full&nbsp;Stack</h2>
+                    <h2 className="banner-title">Web&nbsp;Developer.</h2>
                 </div>
             </div>
         );
