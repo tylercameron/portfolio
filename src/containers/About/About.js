@@ -50,7 +50,7 @@ class About extends Component {
             <Element id="about" className="about">
                 <BrowserRouter>
                     <div>
-                        <h2 className="about-h2">About<br/>Tyler</h2>                            
+                        <h2 className="about-h2">About <span className="about-h2-span"><br /></span>Tyler</h2>                            
                         <div className="about-header">
                             <nav className="subnav">
                                 <ul className="subnav__list">
