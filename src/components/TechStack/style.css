@@ -15,6 +15,7 @@
     margin: 10px 0;
     display:  flex;
     justify-content: center;
+    position: relative;
 }
 
 .stack-title {
@@ -44,7 +45,8 @@
     /* background:  #93abce;
     background: #57419f;
     background: #2fffad; */
-    background: linear-gradient(30deg, rgba(83, 61, 154, 0.8), rgba(70, 255, 249,.75));
+    /* background: linear-gradient(30deg, rgba(83, 61, 154, 0.8), rgba(70, 255, 249,.75)); */
+    background: linear-gradient(30deg, #2b00b8b0, #a981fe 60%);
     height: 35px;
     clip-path: polygon(0 100%, 0% 0%, 100% 0%, 98% 100%);
 
@@ -53,10 +55,12 @@
 
 .rating--js {
     width: 80%;
+    /* background: #fed74b; */
 }
 
 .rating--react {
     width: 70%;
+    /* background: #61dafb; */
 }
 
 .rating--html {
@@ -77,6 +81,7 @@
 
 .rating--vue {
     width: 60%;
+    /* background: #4fc08d; */
 }
 
 .hidden {
@@ -88,4 +93,43 @@
     padding: 8px 10px;
     letter-spacing: 1px;
     font-weight: 900;
+}
+
+@media screen and (max-width: 600px) {
+    .tech-stack {
+        margin: 3rem 1rem;
+    }
+
+    .stack-title {
+        padding-top: 10px;
+        width: 90px;
+        
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .stack-box {
+        width: calc(100% - 90px);
+    }
+
+    .percent {
+        position: absolute;
+        padding: 11px 0;
+        right: 5px;
+
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .stack-title {
+        width: 80px;
+        
+        font-size: 14px;
+    }
+
+    .stack-box {
+        width: calc(100% - 80px);
+    }
 }

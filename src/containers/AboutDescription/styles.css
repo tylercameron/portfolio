@@ -59,10 +59,10 @@
 }
 
 input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 100%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
-  cursor: pointer;
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+    background: transparent; /* Otherwise white in Chrome */
+    cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -70,7 +70,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=range]:focus, {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
 }
 
 input[type=range]::-moz-focus-outer {
@@ -78,13 +78,13 @@ input[type=range]::-moz-focus-outer {
 }
 
 input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
+    width: 100%;
+    cursor: pointer;
 
-  /* Hides the slider so custom styles can be added */
-  background: transparent; 
-  border-color: transparent;
-  color: transparent;
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
 }
 
 input[type="range"] {
@@ -121,28 +121,28 @@ input[type="range"]::-ms-tooltip {
 /* thumb */
 
 input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
-  background: black;
-  box-shadow: 0 0 0 4px #fff;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: black;
+    box-shadow: 0 0 0 4px #fff;
 }
 input[type="range"]::-moz-range-thumb {
-  height: 20px;
-  width: 20px;
-  border-color: transparent;
-  border-radius: 20px;
-  background: black;
-  box-shadow: 0 0 0 4px #fff;
+    height: 20px;
+    width: 20px;
+    border-color: transparent;
+    border-radius: 20px;
+    background: black;
+    box-shadow: 0 0 0 4px #fff;
 }
 
 input[type="range"]::-ms-thumb {
-  height: 20px;
-  width: 20px;
-  border-radius: 20px;
-  background: black;
-  box-shadow: 0 0 0 4px #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background: black;
+    box-shadow: 0 0 0 4px #fff;
 }
 
 @media screen and (max-width: 800px) {

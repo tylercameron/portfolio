@@ -14,7 +14,7 @@ class AboutDescription extends Component {
 
         this.descriptionInput = this.descriptionInput.bind(this);
         this.handleDrag = this.handleDrag.bind(this);
-        this.handleTouch = this.handleTouch.bind(this);
+        // this.handleTouch = this.handleTouch.bind(this);
     }
 
     componentDidMount() {
@@ -76,9 +76,11 @@ class AboutDescription extends Component {
         this.props.onSliderChange(this.state.descriptionSlider, this.state.description);
     }
 
-    handleTouch(e) {
-        this.props.onSliderChange(this.state.descriptionSlider, this.state.description);
-    }
+    // handleTouch(e) {
+    //     // console.log('touch event', e.target.value);
+    //     this.descriptionInput(e);
+    //     this.props.onSliderChange(this.state.descriptionSlider, this.state.description);
+    // }
 
     render() {
         const { descriptionSlider, description } = this.state;
@@ -92,7 +94,7 @@ class AboutDescription extends Component {
             <div id="about-descrip" className={hasMounted ? "description-container" : "description-container trans"}>
                 <h4 className="slider-title">How much do you want to know?</h4>
                 <label htmlFor="description-length" className="label"><span className="label--before">Not much</span> &nbsp;
-                        <input style={bg} type="range" id="description-length" min="0" value={descriptionSlider} max="10" onMouseUp={this.handleDrag} onTouchEnd={this.handleTouch} onChange={this.descriptionInput} />
+                        <input style={bg} type="range" id="description-length" min="0" value={descriptionSlider} max="10" onDragEnd={this.handleDrag} onMouseUp={this.handleDrag} onTouchEnd={this.handleTouch} onChange={this.descriptionInput} />
                     &nbsp; <span className="label--after">All the details!</span>
                 </label>
                 <br />

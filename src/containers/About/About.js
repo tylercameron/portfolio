@@ -20,7 +20,6 @@ class About extends Component {
         };
 
         this.handleSliderChange = this.handleSliderChange.bind(this);
-        this.handleBioClick = this.handleBioClick.bind(this);
         this.handleComponentMount = this.handleComponentMount.bind(this);
     };
 
@@ -31,14 +30,8 @@ class About extends Component {
         });
     };
 
-    handleBioClick() {
-        console.log('bio click');
-    }
-
     handleComponentMount(bool) {
-        console.log(bool);
         if (!this.state.descriptionHasMounted) {
-            
             this.setState({ descriptionHasMounted: bool });
         }
     }
@@ -54,7 +47,7 @@ class About extends Component {
                         <div className="about-header">
                             <nav className="subnav">
                                 <ul className="subnav__list">
-                                    <li className="subnav__item"><NavLink to={`/`} exact activeClassName="active" onClick={this.handleBioClick} >Bio</NavLink></li>
+                                    <li className="subnav__item"><NavLink to={`/`} exact activeClassName="active" >Bio</NavLink></li>
                                     <li className="subnav__item"><NavLink to={`/tech`} exact activeClassName="active">Tech-Stack</NavLink></li>
                                     <li className="subnav__item"><NavLink to={`/contact`} exact activeClassName="active">Contact</NavLink></li>
                                 </ul>
