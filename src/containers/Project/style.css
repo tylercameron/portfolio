@@ -66,6 +66,21 @@
     cursor: pointer;
 }
 
+#close-circle {
+    fill: #7a7a7a;
+}
+#close-x {
+    fill: #7a7a7a;
+}
+.proj__close:hover #close-circle {
+    fill: #4e4e4e;
+    transition: all 0.2s ease-in;
+}
+.proj__close:hover #close-x {
+    fill: #4e4e4e;
+    transition: all 0.2s ease-in;
+}
+
 .proj__title {
     margin: 25px 20px 5px;
     text-align: left;
