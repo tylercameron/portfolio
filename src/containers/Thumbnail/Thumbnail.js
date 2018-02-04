@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import './style.css';
+import squaresMenu from '../../Assets/icons/squares-menu.svg';
 
 class Thumbnail extends PureComponent {
     constructor() {
@@ -54,6 +55,9 @@ class Thumbnail extends PureComponent {
         }
 
         return <div className={containerClassList.join(" ")} style={bg} onMouseEnter={this.onHoverOver} onMouseOver={this.onHoverOver} onMouseLeave={this.onHoverOut} onClick={this.onHoverOver}>
+            <div className="thumb__menu-icon"><img src={squaresMenu} alt="" className="thumb__icon"/></div>
+
+
             <div className={titlesClassList.join(" ")}>
               <h2 className="thumb__h2">{title}</h2>
               <h3 className="thumb__h3">{subhd}</h3>
