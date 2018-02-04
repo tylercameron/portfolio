@@ -6,7 +6,7 @@ import Nav from '../Nav/Nav';
 const Header = () => {
     return (
         <header className="header">
-            <Logo title="Testing Name" />
+            <Logo title="Tyler Smith" />
             <Nav />
         </header>
     )
