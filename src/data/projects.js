@@ -150,10 +150,10 @@ const projects = [
             "height": 500
         },
         "subheading": "Statamic",
-        "page_title": "",
-        "page_subheading": "",
-        "site_url": "",
-        "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit.",
+        "page_title": "Compass Creative",
+        "page_subheading": "CMS update",
+        "site_url": "https://compasscreative.ca/",
+        "page_description": "The original site was built using the Statamic CMS version 1. An update was necessary to bring the CMS to the latest version to take advantage of the new content types among other features.",
     },
     {
         "id": 7,
@@ -179,9 +179,9 @@ const projects = [
         },
         "subheading": "Craft, Javascript",
         "page_title": "Mission Thrift Store",
-        "page_subheading": "Volunteer Store Network",
-        "site_url": "",
-        "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."
+        "page_subheading": "Site update for a growing network",
+        "site_url": "https://missionthriftstore.com/",
+        "page_description": "To accommodate a growing network of stores and give greater access to each branch the site was given an redesign. Updating the volunteer page, careers page as well as a new search function allow for easier browsing for the user. The store pages for each store was updated and given more access through Craft CMS."
     },
     {
         "id": 6,
@@ -207,9 +207,9 @@ const projects = [
         },
         "subheading": "CMS, Javascript",
         "page_title": "Shademaster Landscaping",
-        "page_subheading": "Luxury feel",
-        "site_url": "",
-        "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."
+        "page_subheading": "Site update/redesign",
+        "site_url": "http://shademaster.com/",
+        "page_description": "This site was completely updated to give a new look and feel. An emphasis was placed on having more images across the site to highlight the great work being done. Using flexbox and Javascript these images are displayed all over the site and offer insight so much of what Shademaster offers its clients."
     },
     {
         "id": 5,
@@ -218,7 +218,7 @@ const projects = [
         "slug": "niagara-pallet",
         "status": "publish",
         "title": "Niagara Pallet",
-        "stack_tag": [3, 2],
+        "stack_tag": [3],
         "gallery": [
             {
                 "url": "niagarapallet@2x.jpg",
@@ -233,11 +233,11 @@ const projects = [
             "width": 800,
             "height": 500
         },
-        "subheading": "Statamic, Javascript",
+        "subheading": "Statamic",
         "page_title": "Niagara Pallet",
-        "page_subheading": "New look site",
-        "site_url": "",
-        "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."
+        "page_subheading": "Completely new site built on Statamic",
+        "site_url": "https://niagarapallet.ca/",
+        "page_description": "To go along with their Niagara Pallet's rebranding a new website was created with a custom look tailored to their business. Created with the Statamic CMS allows for updates to content to easily be modified by the client. Custom pages give this site a unique look compared to templated sites out there."
     },
     {
         "id": 4,
@@ -264,8 +264,8 @@ const projects = [
         "subheading": "Statamic, Javascript",
         "page_title": "Tebulo",
         "page_subheading": "Multilingual website",
-        "site_url": "",
-        "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."
+        "site_url": "http://tebulo.net/",
+        "page_description": "Edits to this site required a few changes to each part of the multilingual site. Adding some custom content using HTML and Javascript kept the look of this site consistent in all languages."
     },
     {
         "id": 3,
@@ -292,8 +292,8 @@ const projects = [
         "subheading": "Statamic, Javascript",
         "page_title": "Turf Systems",
         "page_subheading": "Lawn care calculator",
-        "site_url": "",
-        "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."
+        "site_url": "https://turfsystems.ca/",
+        "page_description": "This site required a couple minor changes to the look and feel on the home page, however the main task was to add new lawn sizes to the custom made pricing calculator. This calculator is custom built using Javascript and JQuery. It provides a real signature piece to their site."
     },
     {
         "id": 2,
@@ -319,9 +319,9 @@ const projects = [
         },
         "subheading": "Statamic, Javascript",
         "page_title": "Wentworth Landscapes",
-        "page_subheading": "",
-        "site_url": "",
-        "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."
+        "page_subheading": "Commercial Page",
+        "site_url": "https://wentworthlandscapes.com/",
+        "page_description": "Added a new page to this site. This fully responsive page fits with the rest of the website. It includes custom flowing sections incorporating text and images as well as Javascript gallery slider."
     },
     {
         "id": 1,
@@ -333,7 +333,7 @@ const projects = [
         "stack_tag": [3],
         "gallery": [
             {
-                "url": "acornlandscapesupply@2x.jpg",
+                "url": "acornlandscapesupply.jpg",
                 "post_mime_type": "image/jpeg"
             }
         ],
@@ -347,9 +347,9 @@ const projects = [
         },
         "subheading": "Statamic",
         "page_title": "Acorn Landscape Supplies",
-        "page_subheading": "",
-        "site_url": "",
-        "page_description": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.\r\n\r\nDonec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit."
+        "page_subheading": "New CMS Content",
+        "site_url": "http://acornlandscapesupply.ca/",
+        "page_description": "Adding new content sections to this site allow for more product variations to be entered by the client through Statamic CMS."
     }
 ]
 
