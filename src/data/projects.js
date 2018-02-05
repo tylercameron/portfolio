@@ -39,9 +39,9 @@ const projects = [
             "alt": "Maintemp Website",
             "title": "Maintemp Website",
             "mime_type": "image/png",
-            "url": "Screen-Shot-2017-11-17-at-10.28.17-AM.png",
-            "width": 2560,
-            "height": 1600,
+            "url": "maintemp.png",
+            "width": 800,
+            "height": 500,
         },
         "subheading": "Statamic, Javascript",
         "page_title": "Maintemp",
@@ -49,7 +49,7 @@ const projects = [
         "page_description": "Instead of using a template for this quick build, a custom site was created to meet their needs. As a result the look and feel are completely tailored to the company. Being built on the Statamic CMS allows for easy additions to the site. Solid HTML, CSS and Javascript have this site performing great on all screen sizes and loading very quickly too.",
         "gallery": [
             {
-                "url": "Screen-Shot-2017-11-17-at-10.28.17-AM.png",
+                "url": "maintemp.png",
                 "post_mime_type": "image/png"     
             }
         ], 
