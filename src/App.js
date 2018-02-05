@@ -3,7 +3,7 @@ import "./App.css";
 
 import Header from "./components/Header/Header";
 import Banner from './components/Banner/Banner';
-// import About from "./containers/About/About";
+import About from "./containers/About/About";
 import Projects from './containers/Projects/Projects';
 import projects from './data/projects';
 
@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Banner />
-
+        <About />
         {allProjects}
       </div>
     );
