@@ -1,5 +1,10 @@
+.projects {
+    background: #242424;
+    padding: 2em 0;
+}
+
 .proj-thmbs {
-    background: #f1f1f196;
+    background: #e5e5e5;
     padding: 40px 20px;
     margin: 0;
 }
@@ -16,6 +21,9 @@
 
 .proj-thmbs__title {
     font-weight: 400;
+
+    color: white;
+    color: #65ffe6;
 }
 
 @media screen and (max-width: 499px) {
@@ -51,23 +59,4 @@
         max-width: 1180px;
         margin: auto;
     }
-}
-
-.example-enter {
-    opacity: 0.01;
-}
-
-.example-enter.example-enter-active {
-    opacity: 1;
-    transition: 1800ms ease-in;
-}
-
-.example-leave {
-    opacity: 1;
-}
-
-.example-leave.example-leave-active {
-    opacity: 0.01;
-    transition: 800ms ease-in;
-
 }
