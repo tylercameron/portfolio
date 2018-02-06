@@ -30,7 +30,7 @@
 }
 .stack-box {
     /* background: #93abcf61; */
-    background: #cacacacc;
+    background: rgba(202,202,202,.8);
     height:  35px;
     width: 400px;
     position:  relative;
@@ -46,11 +46,18 @@
     background: #57419f;
     background: #2fffad; */
     /* background: linear-gradient(30deg, rgba(83, 61, 154, 0.8), rgba(70, 255, 249,.75)); */
-    background: linear-gradient(30deg, #2b00b8b0, #a981fe 60%);
+    /* background: linear-gradient(30deg, #2b00b8b0, #a981fe 60%); */
+    background: #a981fe;
     height: 35px;
     clip-path: polygon(0 100%, 0% 0%, 100% 0%, 98% 100%);
 
     transition: width 0.8s 0.5s ease-in-out;
+}
+
+@supports (background: linear-gradient(30deg, #2b00b8b0, #a981fe 60%)) {
+    .rating {
+        background: linear-gradient(30deg, #2b00b8b0, #a981fe 60%);
+    }
 }
 
 .rating--js {
