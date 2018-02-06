@@ -1,5 +1,5 @@
 function rotateTitle() {
-    const titles = document.querySelectorAll('.banner-title');
+    const titles = [...document.querySelectorAll('.banner-title')];
     const header = document.querySelector('.header');
     const titlesArray = [];
     titles.forEach(item => titlesArray.push(item));
