@@ -1,4 +1,6 @@
 .tech-stack {
+    position: relative;
+
     margin:  4rem 0 7rem;
     opacity: 1;
     transform: translateX(0);
@@ -139,4 +141,164 @@
     .stack-box {
         width: calc(100% - 80px);
     }
+}
+
+
+
+
+div#tech-stack {
+    min-height: 500px;
+    margin: 2em 0 7em;
+}
+.about-content {
+    margin-top: 32px;
+}
+
+.skill {
+    position:  absolute;
+}
+h3.skill {
+    font-size:  34px;
+    font-weight:  bold;
+}
+h4.skill {
+    font-size:  30px;
+    font-weight:  normal;
+}
+h5.skill {
+    font-size: 19px;
+    font-weight:  lighter;
+}
+.skill--1 {
+    left: 500px;
+    top: 100px;
+}
+.skill--2 {
+    left: 400px;
+    top: 200px;
+}
+
+.skill--3 {
+    left: 800px;
+    top: 150px;
+}
+
+.skill--4 {
+    top: 30px;
+    left: 1000px;
+}
+
+.skill--5 {
+    top: 0;
+    left: 380px;
+}
+
+.skill--6 {
+    top:  60px;
+    left: 700px;
+}
+
+.skill--7 {
+    top:  0;
+    left: 550px;
+}
+
+.skill--8 {
+    top: 125px;
+    left: 80px;
+}
+
+.skill--9 {
+    top: 300px;
+    left: 70px;
+}
+
+.skill--10 {
+    top:  10px;
+    left: 50px;
+}
+
+.skill--11 {
+    top: -50px;
+    left: 1100px;
+}
+
+.skill--12 {
+    top: 70px;
+    left: 220px;
+}
+
+.skill--13 {
+    top:  110px;
+    left: 1150px;
+}
+
+.skill--14 {
+    top: 180px;
+    left: 560px;
+}
+
+.skill--15 {
+    top: 250px;
+    left: 900px;
+}
+
+.skill--16 {
+    top: 350px;
+    left: 300px;
+}
+
+.skill--17 {
+    top: 350px;
+    left: 800px;
+}
+
+.skill--18 {
+    top: 0;
+    left: 260px;
+}
+
+.skill--19 {
+    top: 100px;
+    left: 950px;
+}
+
+.skill--20 {
+    top:  120px;
+    left: 340px;
+}
+
+.skill--21 {
+    top: 280px;
+    left: 380px;
+}
+
+.skill--22 {
+    top: 80px;
+    left:  90px;
+}
+
+.skill--23 {
+    top:  200px;
+    left:  1000px;
+}
+
+.skill--24 {
+    top:  220px;
+    left:  150px;
+}
+
+.skill--25 {
+    top: 0;
+    left:  870px;
+}
+
+.skill--26 {
+    top:  300px;
+    left:  650px;
+}
+
+.skill--27 {
+    top:  320px;
+    left:  1100px;
 }
