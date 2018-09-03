@@ -146,11 +146,11 @@
 
 
 
-div#tech-stack {
-    background: blue;
-
+#tech-stack {
     min-height: 430px;
     margin: 2em auto 7em;
+
+    max-width: 320px;
 }
 .about-content {
     margin-top: 32px;
@@ -171,8 +171,9 @@ h5.skill {
     font-size: 19px;
     font-weight:  lighter;
 }
+
 .skill--1 {
-    left: 330px;
+    left: 150px;
     top: 90px;
 }
 .skill--2 {
@@ -180,24 +181,24 @@ h5.skill {
     top: 220px;
 }
 .skill--3 {
-    left: 500px;
-    top: 250px;
+    left: 250px;
+    top: 285px;
 }
 .skill--4 {
     top: -40px;
     left: 150px;
 }
 .skill--5 {
-    top: 0;
-    left: 380px;
+    top: -30px;
+    left: 0px;
 }
 .skill--6 {
-    top: 60px;
-    left: 665px;
+    top: 80px;
+    left: 0px;
 }
 .skill--7 {
-    top: -55px;
-    left: 440px;
+    top: -70px;
+    left: 210px;
 }
 .skill--8 {
     top: 125px;
@@ -212,40 +213,40 @@ h5.skill {
     left: 25px;
 }
 .skill--11 {
-    top: 115px;
-    left: 530px;
+    top: 170px;
+    left: 0px;
 }
 .skill--12 {
     top: 70px;
     left: 220px;
 }
 .skill--13 {
-    top: 230px;
-    left: 650px;
+    top: 170px;
+    left: 205px;
 }
 .skill--14 {
-    top: 180px;
-    left: 520px;
+    top: 7px;
+    left: 150px;
 }
 .skill--15 {
-    top: 300px;
-    left: 540px;
+    top: 320px;
+    left: 205px;
 }
 .skill--16 {
-    top: 330px;
-    left: 300px;
+    top: 365px;
+    left: 100px;
 }
 .skill--17 {
     top: 230px;
-    left: 250px;
+    left: 180px;
 }
 .skill--18 {
     top: 0;
     left: 260px;
 }
 .skill--19 {
-    top: 100px;
-    left: 590px;
+    top: 50px;
+    left: 190px;
 }
 .skill--20 {
     top: 140px;
@@ -253,15 +254,15 @@ h5.skill {
 }
 .skill--21 {
     top: 280px;
-    left: 380px;
+    left: 0px;
 }
 .skill--22 {
     top: 80px;
     left:  90px;
 }
 .skill--23 {
-    top: 200px;
-    left: 400px;
+    top: 159px;
+    left: 160px;
 }
 .skill--24 {
     top:  220px;
@@ -269,35 +270,111 @@ h5.skill {
 }
 .skill--25 {
     top: 63px;
-    left: 470px;
+    left: 0px;
 }
 .skill--26 {
-    top:  300px;
-    left:  650px;
+    top: 350px;
+    left: 50px;
 }
 .skill--27 {
     top: 300px;
     left: 150px;
 }
 
-
-
 @media (min-width: 550px) {
 
     #tech-stack {
         max-width: 550px;
     }
-
-
+    .skill--1 {
+        left: 330px;
+        top: 90px;
+    }
+    .skill--3 {
+        left: 480px;
+        top: 250px;
+    }
+    .skill--5 {
+        top: 0;
+        left: 380px;
+    }
+    .skill--6 {
+        top: 60px;
+        left: 375px;
+    }
+    .skill--7 {
+        top: -55px;
+        left: 440px;
+    }
+    .skill--14 {
+        top: 150px;
+        left: 380px;
+    }
+    .skill--15 {
+        top: 300px;
+        left: 465px;
+    }
+    .skill--16 {
+        top: 330px;
+        left: 300px;
+    }
+    .skill--17 {
+        top: 230px;
+        left: 250px;
+    }
+    .skill--21 {
+        top: 280px;
+        left: 380px;
+    }
+    .skill--23 {
+        top: 200px;
+        left: 400px;
+    }
+    .skill--25 {
+        top: 63px;
+        left: 470px;
+    }
 }
 @media (min-width: 767px) {
 
     #tech-stack {
         max-width: 767px;
     }
+    .skill--3 {
+        left: 500px;
+        top: 250px;
+    }
+    .skill--6 {
+        top: 60px;
+        left: 665px;
+    }
     .skill--7 {
         top:  -20px;
         left: 575px;
+    }
+    .skill--11 {
+        top: 115px;
+        left: 530px;
+    }
+    .skill--13 {
+        top: 230px;
+        left: 650px;
+    }
+    .skill--14 {
+        top: 180px;
+        left: 520px;
+    }
+    .skill--15 {
+        top: 300px;
+        left: 540px;
+    }
+    .skill--19 {
+        top: 100px;
+        left: 590px;
+    }
+    .skill--26 {
+        top:  300px;
+        left:  650px;
     }
 }
 @media (min-width: 1000px) {
