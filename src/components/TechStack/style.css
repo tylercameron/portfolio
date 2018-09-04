@@ -10,7 +10,7 @@
 
 .opac {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-1000%);
 }
 
 .tech-stack__item {
@@ -158,6 +158,15 @@
 
 .skill {
     position:  absolute;
+
+    transform: translateX(0);
+
+    transition: transform 0.8s ease-in-out;
+    /* transition: opacity 0.4s ease-in, transform 0.8s ease-in-out; */
+}
+.opac {
+    opacity: 0;
+    transform: translateX(-1000%);
 }
 h3.skill {
     font-size:  38px;

@@ -7,78 +7,55 @@ class TechStack extends Component {
     }
 
     componentWillUnmount() {
-        this.removeActive();
+        // this.removeActive();
     }
 
     setActive() {
-        const activeView = document.getElementById('tech-stack');
+        const preAnimate = Array.from(document.querySelectorAll('.skill'));
 
-        setTimeout(() => {
-            if (activeView.classList.contains('opac')) {
-                activeView.classList.remove('opac');
-            }
-            const children = activeView.children;
-    
-            // for (let i = 0; i < children.length; i++) {
-            //     const ratingsDiv = children[i].children[1].children[0];
-            //     if (ratingsDiv.classList.contains('hidden')) {
-            //         ratingsDiv.classList.remove('hidden');
-            //     }
-            // }
-        }, 10);
-
-    }
-
-    removeActive() {
-        const activeView = document.getElementById('tech-stack');
-
-        if (!activeView.classList.contains('opac')) {
-            activeView.classList.add('opac');
-        }
-
-        const children = activeView.children;
-
-        // for (let i = 0; i < children.length; i++) {
-        //     const ratingsDiv = children[i].children[1].children[0];
+        preAnimate.map(item => {
             
-        //     if (!ratingsDiv.classList.contains('hidden')) {
-        //         ratingsDiv.classList.add('hidden');
-        //     }
-        // }
+            if (item.classList.contains('opac')) {                
+                setTimeout(() => {                    
+                    return item.classList.remove('opac');
+                }, 100);
+            }
+            return null;
+        });
     }
 
     render() {
         return (
-            <div id="tech-stack" className="tech-stack opac">
-                <h3 className="skill skill--1">Javascript</h3>
-                <h3 className="skill skill--2">HTML</h3>
-                <h3 className="skill skill--3">CSS</h3>
-                <h3 className="skill skill--4">Git</h3>
+            <div id="tech-stack" className="tech-stack">
+                <h3 className="skill--1 skill opac">Javascript</h3>
+                <h3 className="skill--2 skill opac">HTML</h3>
+                <h3 className="skill--3 skill opac">CSS</h3>
+                <h3 className="skill--4 skill opac">Git</h3>
 
-                <h4 className="skill skill--5">React.js</h4>
-                <h4 className="skill skill--6">Node.js</h4>
-                <h4 className="skill skill--7">Express.js</h4>
-                <h4 className="skill skill--8">JQuery</h4>
-                <h4 className="skill skill--9">Github</h4>
-                <h4 className="skill skill--10">Bitbucket</h4>
-                <h4 className="skill skill--11">Craft CMS</h4>
-                <h4 className="skill skill--12">Vue.js</h4>
-                <h4 className="skill skill--13">MySQL</h4>
-                <h4 className="skill skill--14">Ruby on Rails</h4>
-                <h4 className="skill skill--15">Sass</h4>
-                <h4 className="skill skill--16">Statamic CMS</h4>
-                <h4 className="skill skill--17">Mongo DB</h4>
+                <h4 className="skill--5 skill opac">React.js</h4>
+                <h4 className="skill--6 skill opac">Node.js</h4>
+                <h4 className="skill--7 skill opac">Express.js</h4>
+                <h4 className="skill--8 skill opac">JQuery</h4>
+                <h4 className="skill--9 skill opac">Github</h4>
+                <h4 className="skill--10 skill opac">Bitbucket</h4>
+                <h4 className="skill--11 skill opac">Craft CMS</h4>
+                <h4 className="skill--12 skill opac">Vue.js</h4>
+                <h4 className="skill--13 skill opac">MySQL</h4>
+                <h4 className="skill--14 skill opac">Ruby on Rails</h4>
+                <h4 className="skill--15 skill opac">Sass</h4>
+                <h4 className="skill--16 skill opac">Statamic CMS</h4>
+                <h4 className="skill--17 skill opac">Mongo DB</h4>
                 
-                <h5 className="skill skill--18">Gulp</h5>
-                <h5 className="skill skill--19">PostgreSQL</h5>
-                <h5 className="skill skill--20">Webpack</h5>
-                <h5 className="skill skill--21">Gatsby.js</h5>
-                <h5 className="skill skill--22">Sketch</h5>
-                <h5 className="skill skill--23">Next.js</h5>
-                <h5 className="skill skill--24">Grunt</h5>
-                <h5 className="skill skill--25">Redux</h5>
-                <h5 className="skill skill--26">Wordpress</h5>
-                <h5 className="skill skill--27">Photoshop</h5>                
+                <h5 className="skill--18 skill opac">Gulp</h5>
+                <h5 className="skill--19 skill opac">PostgreSQL</h5>
+                <h5 className="skill--20 skill opac">Webpack</h5>
+                <h5 className="skill--21 skill opac">Gatsby.js</h5>
+                <h5 className="skill--22 skill opac">Sketch</h5>
+                <h5 className="skill--23 skill opac">Next.js</h5>
+                <h5 className="skill--24 skill opac">Grunt</h5>
+                <h5 className="skill--25 skill opac">Redux</h5>
+                <h5 className="skill--26 skill opac">Wordpress</h5>
+                <h5 className="skill--27 skill opac">Photoshop</h5>                
             </div>
         );
     }
