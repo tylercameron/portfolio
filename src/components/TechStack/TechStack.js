@@ -13,8 +13,7 @@ class TechStack extends Component {
     setActive() {
         const preAnimate = Array.from(document.querySelectorAll('.skill'));
 
-        preAnimate.map(item => {
-            
+        preAnimate.map(item => {            
             if (item.classList.contains('opac')) {                
                 setTimeout(() => {                    
                     return item.classList.remove('opac');
